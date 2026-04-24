@@ -1,0 +1,33 @@
+{
+  "name": "nexconn-sdk-node",
+  "version": "0.1.0",
+  "description": "Nexconn SDK for TypeScript",
+  "author": "Nexconn",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab2.rongcloud.net/public-server/nexconn-server-sdk-node.git"
+  },
+  "keywords": [
+    "axios",
+    "typescript",
+    "nexconn",
+    "nexconn",
+    "nexconn-sdk-node"
+  ],
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "module": "./dist/esm/index.js",
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc && tsc -p tsconfig.esm.json",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "axios": "^1.6.1"
+  },
+  "devDependencies": {
+    "@types/node": ">=14",
+    "typescript": "^4.7 || ^5.0"
+  }
+}
