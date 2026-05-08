@@ -14,7 +14,7 @@ OpenAPI specification aligned with the current Nexconn public documentation, PDF
 ## Installation
 
 ```sh
-npm install "git+https://github.com/NexconnAI-Dev/nexconn-server-sdk-node.git#0.1.0"
+npm install "git+https://github.com/NexconnAI-Dev/nexconn-server-sdk-node.git#v0.1.0"
 ```
 
 If you publish releases later, prefer installing a tagged version instead of tracking a branch.
