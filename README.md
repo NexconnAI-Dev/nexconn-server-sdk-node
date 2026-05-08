@@ -1,4 +1,4 @@
-# nexconn-sdk-node
+# @nexconn/server-sdk
 
 OpenAPI specification aligned with the current Nexconn public documentation, PDF source documents, and generated SDK requirements.
 
@@ -14,7 +14,7 @@ OpenAPI specification aligned with the current Nexconn public documentation, PDF
 ## Installation
 
 ```sh
-npm install "git+https://gitlab2.rongcloud.net/public-server/nexconn-server-sdk-node.git#dev"
+npm install "git+https://github.com/NexconnAI-Dev/nexconn-server-sdk-node.git#0.1.0"
 ```
 
 If you publish releases later, prefer installing a tagged version instead of tracking a branch.
@@ -22,7 +22,7 @@ If you publish releases later, prefer installing a tagged version instead of tra
 Then import the package:
 
 ```typescript
-import { Configuration, UserManagementApi } from 'nexconn-sdk-node';
+import { Configuration, UserManagementApi } from '@nexconn/server-sdk';
 ```
 
 ## Quick Start
@@ -30,7 +30,7 @@ import { Configuration, UserManagementApi } from 'nexconn-sdk-node';
 The example below uses the SDK's built-in signing support to inject `App-Key / Nonce / Timestamp / Signature / X-Request-ID` automatically.
 
 ```typescript
-import { Configuration, UserManagementApi, AccessTokenIssueRequest, ApiException } from 'nexconn-sdk-node';
+import { Configuration, UserManagementApi, AccessTokenIssueRequest, ApiException } from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setNexconnCredentials(
@@ -83,7 +83,7 @@ import {
     ConflictException,
     TooManyRequestsException,
     ServiceException,
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 try {
     const { data } = await groupApi.createGroup(request);
@@ -127,7 +127,7 @@ All exception subclasses provide the following properties:
 
 - Automatic Nexconn request signing when `setNexconnCredentials()` is configured
 - Built-in multi-domain failover support via `setPrimaryBackupDomains()`
-- Default `User-Agent`: `nexconn-sdk-node/0.1.0`
+- Default `User-Agent`: `@nexconn/server-sdk/0.1.0`
 - Automatic `X-Request-ID` generation
 
 ## Configuration of Server URL
@@ -624,7 +624,7 @@ Authentication schemes defined for the API:
 
 ## Package Info
 
-- Repository: `https://gitlab2.rongcloud.net/public-server/nexconn-server-sdk-node`
+- Repository: `https://github.com/NexconnAI-Dev/nexconn-server-sdk-node`
 - Package version: `0.1.0`
 
 ## License

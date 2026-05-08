@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { UserTagBatchGetRequest } from 'nexconn-sdk-node';
+import { UserTagBatchGetRequest } from '@nexconn/server-sdk';
 
 const instance: UserTagBatchGetRequest = {
     userIds,

@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { UserChannelTagRemoveRequest } from 'nexconn-sdk-node';
+import { UserChannelTagRemoveRequest } from '@nexconn/server-sdk';
 
 const instance: UserChannelTagRemoveRequest = {
     userId,

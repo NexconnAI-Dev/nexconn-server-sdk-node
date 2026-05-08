@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { GroupChannelFreezeStatusItem } from 'nexconn-sdk-node';
+import { GroupChannelFreezeStatusItem } from '@nexconn/server-sdk';
 
 const instance: GroupChannelFreezeStatusItem = {
     channelId,

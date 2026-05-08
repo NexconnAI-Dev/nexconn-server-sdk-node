@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { SystemChannelPushResponseResult } from 'nexconn-sdk-node';
+import { SystemChannelPushResponseResult } from '@nexconn/server-sdk';
 
 const instance: SystemChannelPushResponseResult = {
     id,

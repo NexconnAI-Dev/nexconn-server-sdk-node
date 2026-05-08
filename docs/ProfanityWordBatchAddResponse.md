@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { ProfanityWordBatchAddResponse } from 'nexconn-sdk-node';
+import { ProfanityWordBatchAddResponse } from '@nexconn/server-sdk';
 
 const instance: ProfanityWordBatchAddResponse = {
     code,

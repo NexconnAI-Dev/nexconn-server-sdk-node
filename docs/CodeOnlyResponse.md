@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { CodeOnlyResponse } from 'nexconn-sdk-node';
+import { CodeOnlyResponse } from '@nexconn/server-sdk';
 
 const instance: CodeOnlyResponse = {
     code,

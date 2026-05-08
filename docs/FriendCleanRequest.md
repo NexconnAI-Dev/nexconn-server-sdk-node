@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { FriendCleanRequest } from 'nexconn-sdk-node';
+import { FriendCleanRequest } from '@nexconn/server-sdk';
 
 const instance: FriendCleanRequest = {
     userId,

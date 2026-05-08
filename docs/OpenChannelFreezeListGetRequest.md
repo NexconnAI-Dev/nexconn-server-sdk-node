@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { OpenChannelFreezeListGetRequest } from 'nexconn-sdk-node';
+import { OpenChannelFreezeListGetRequest } from '@nexconn/server-sdk';
 
 const instance: OpenChannelFreezeListGetRequest = {
     page,

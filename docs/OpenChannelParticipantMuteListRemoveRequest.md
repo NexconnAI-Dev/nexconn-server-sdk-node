@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { OpenChannelParticipantMuteListRemoveRequest } from 'nexconn-sdk-node';
+import { OpenChannelParticipantMuteListRemoveRequest } from '@nexconn/server-sdk';
 
 const instance: OpenChannelParticipantMuteListRemoveRequest = {
     channelId,

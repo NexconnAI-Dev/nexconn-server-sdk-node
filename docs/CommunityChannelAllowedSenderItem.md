@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { CommunityChannelAllowedSenderItem } from 'nexconn-sdk-node';
+import { CommunityChannelAllowedSenderItem } from '@nexconn/server-sdk';
 
 const instance: CommunityChannelAllowedSenderItem = {
     userId,

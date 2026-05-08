@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { MessageMetadataSetRequest } from 'nexconn-sdk-node';
+import { MessageMetadataSetRequest } from '@nexconn/server-sdk';
 
 const instance: MessageMetadataSetRequest = {
     messageId,

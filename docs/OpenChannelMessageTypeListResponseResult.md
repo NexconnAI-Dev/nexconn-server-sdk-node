@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { OpenChannelMessageTypeListResponseResult } from 'nexconn-sdk-node';
+import { OpenChannelMessageTypeListResponseResult } from '@nexconn/server-sdk';
 
 const instance: OpenChannelMessageTypeListResponseResult = {
     messageTypes,

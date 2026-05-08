@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { GroupChannelAllowedSenderListGetRequest } from 'nexconn-sdk-node';
+import { GroupChannelAllowedSenderListGetRequest } from '@nexconn/server-sdk';
 
 const instance: GroupChannelAllowedSenderListGetRequest = {
     channelId,

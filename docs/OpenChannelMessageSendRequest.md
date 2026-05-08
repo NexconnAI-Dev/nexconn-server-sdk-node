@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { OpenChannelMessageSendRequest } from 'nexconn-sdk-node';
+import { OpenChannelMessageSendRequest } from '@nexconn/server-sdk';
 
 const instance: OpenChannelMessageSendRequest = {
     fromUserId,

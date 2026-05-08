@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { UserChannelTagListItem } from 'nexconn-sdk-node';
+import { UserChannelTagListItem } from '@nexconn/server-sdk';
 
 const instance: UserChannelTagListItem = {
     tagId,

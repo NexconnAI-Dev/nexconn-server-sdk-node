@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { OpenChannelParticipantMuteListAddRequest } from 'nexconn-sdk-node';
+import { OpenChannelParticipantMuteListAddRequest } from '@nexconn/server-sdk';
 
 const instance: OpenChannelParticipantMuteListAddRequest = {
     channelId,

@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { ChannelTypeNotificationGetResponse } from 'nexconn-sdk-node';
+import { ChannelTypeNotificationGetResponse } from '@nexconn/server-sdk';
 
 const instance: ChannelTypeNotificationGetResponse = {
     code,

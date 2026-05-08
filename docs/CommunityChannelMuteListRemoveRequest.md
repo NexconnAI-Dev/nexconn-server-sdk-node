@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { CommunityChannelMuteListRemoveRequest } from 'nexconn-sdk-node';
+import { CommunityChannelMuteListRemoveRequest } from '@nexconn/server-sdk';
 
 const instance: CommunityChannelMuteListRemoveRequest = {
     channelId,

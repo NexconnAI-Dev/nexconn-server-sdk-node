@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { OpenChannelMetadataBatchGetResponse } from 'nexconn-sdk-node';
+import { OpenChannelMetadataBatchGetResponse } from '@nexconn/server-sdk';
 
 const instance: OpenChannelMetadataBatchGetResponse = {
     code,

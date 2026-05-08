@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { ProfanityWordListedItem } from 'nexconn-sdk-node';
+import { ProfanityWordListedItem } from '@nexconn/server-sdk';
 
 const instance: ProfanityWordListedItem = {
     word,

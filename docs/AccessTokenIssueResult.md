@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { AccessTokenIssueResult } from 'nexconn-sdk-node';
+import { AccessTokenIssueResult } from '@nexconn/server-sdk';
 
 const instance: AccessTokenIssueResult = {
     userId,

@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { OpenChannelFreezeListGetResponseResult } from 'nexconn-sdk-node';
+import { OpenChannelFreezeListGetResponseResult } from '@nexconn/server-sdk';
 
 const instance: OpenChannelFreezeListGetResponseResult = {
     channelIds,

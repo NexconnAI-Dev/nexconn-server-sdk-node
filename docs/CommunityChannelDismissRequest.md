@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { CommunityChannelDismissRequest } from 'nexconn-sdk-node';
+import { CommunityChannelDismissRequest } from '@nexconn/server-sdk';
 
 const instance: CommunityChannelDismissRequest = {
     channelId,

@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { UserTagBatchSetRequest } from 'nexconn-sdk-node';
+import { UserTagBatchSetRequest } from '@nexconn/server-sdk';
 
 const instance: UserTagBatchSetRequest = {
     userIds,

@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { GroupChannelAliasGetResponseResult } from 'nexconn-sdk-node';
+import { GroupChannelAliasGetResponseResult } from '@nexconn/server-sdk';
 
 const instance: GroupChannelAliasGetResponseResult = {
     alias,

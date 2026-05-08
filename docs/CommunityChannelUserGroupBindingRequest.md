@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { CommunityChannelUserGroupBindingRequest } from 'nexconn-sdk-node';
+import { CommunityChannelUserGroupBindingRequest } from '@nexconn/server-sdk';
 
 const instance: CommunityChannelUserGroupBindingRequest = {
     channelId,

@@ -21,7 +21,7 @@ import {
     OpenChannelManagementApi,
     Configuration,
     OpenChannelCreateRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -82,7 +82,7 @@ import {
     OpenChannelManagementApi,
     Configuration,
     OpenChannelDestroyRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -143,7 +143,7 @@ import {
     OpenChannelManagementApi,
     Configuration,
     OpenChannelGetRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -204,7 +204,7 @@ import {
     OpenChannelManagementApi,
     Configuration,
     OpenChannelDestroyTypeSetRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(

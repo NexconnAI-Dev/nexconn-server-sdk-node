@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { FriendProfileSetRequest } from 'nexconn-sdk-node';
+import { FriendProfileSetRequest } from '@nexconn/server-sdk';
 
 const instance: FriendProfileSetRequest = {
     userId,

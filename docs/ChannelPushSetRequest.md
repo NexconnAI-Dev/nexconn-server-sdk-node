@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { ChannelPushSetRequest } from 'nexconn-sdk-node';
+import { ChannelPushSetRequest } from '@nexconn/server-sdk';
 
 const instance: ChannelPushSetRequest = {
     channelType,

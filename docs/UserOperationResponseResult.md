@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { UserOperationResponseResult } from 'nexconn-sdk-node';
+import { UserOperationResponseResult } from '@nexconn/server-sdk';
 
 const instance: UserOperationResponseResult = {
     operationId,

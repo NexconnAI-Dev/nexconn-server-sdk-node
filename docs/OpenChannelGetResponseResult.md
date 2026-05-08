@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { OpenChannelGetResponseResult } from 'nexconn-sdk-node';
+import { OpenChannelGetResponseResult } from '@nexconn/server-sdk';
 
 const instance: OpenChannelGetResponseResult = {
     channelId,

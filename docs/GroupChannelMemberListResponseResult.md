@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { GroupChannelMemberListResponseResult } from 'nexconn-sdk-node';
+import { GroupChannelMemberListResponseResult } from '@nexconn/server-sdk';
 
 const instance: GroupChannelMemberListResponseResult = {
     totalCount,

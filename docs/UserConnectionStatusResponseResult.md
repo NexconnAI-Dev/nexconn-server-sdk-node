@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { UserConnectionStatusResponseResult } from 'nexconn-sdk-node';
+import { UserConnectionStatusResponseResult } from '@nexconn/server-sdk';
 
 const instance: UserConnectionStatusResponseResult = {
     status,

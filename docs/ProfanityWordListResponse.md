@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { ProfanityWordListResponse } from 'nexconn-sdk-node';
+import { ProfanityWordListResponse } from '@nexconn/server-sdk';
 
 const instance: ProfanityWordListResponse = {
     code,

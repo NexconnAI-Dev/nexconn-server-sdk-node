@@ -26,7 +26,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { DirectChannelMessageSendRequest } from 'nexconn-sdk-node';
+import { DirectChannelMessageSendRequest } from '@nexconn/server-sdk';
 
 const instance: DirectChannelMessageSendRequest = {
     fromUserId,

@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { UserProfileItem } from 'nexconn-sdk-node';
+import { UserProfileItem } from '@nexconn/server-sdk';
 
 const instance: UserProfileItem = {
     userId,

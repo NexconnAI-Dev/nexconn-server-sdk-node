@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { FriendRelationshipGetRequest } from 'nexconn-sdk-node';
+import { FriendRelationshipGetRequest } from '@nexconn/server-sdk';
 
 const instance: FriendRelationshipGetRequest = {
     userId,

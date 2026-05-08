@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { ChannelPinState } from 'nexconn-sdk-node';
+import { ChannelPinState } from '@nexconn/server-sdk';
 
 const instance: ChannelPinState = {
     isPinned,

@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { SystemChannelPushNotification } from 'nexconn-sdk-node';
+import { SystemChannelPushNotification } from '@nexconn/server-sdk';
 
 const instance: SystemChannelPushNotification = {
     title,

@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { ChannelTypeNotificationSetRequest } from 'nexconn-sdk-node';
+import { ChannelTypeNotificationSetRequest } from '@nexconn/server-sdk';
 
 const instance: ChannelTypeNotificationSetRequest = {
     channelType,

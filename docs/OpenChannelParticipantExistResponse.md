@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { OpenChannelParticipantExistResponse } from 'nexconn-sdk-node';
+import { OpenChannelParticipantExistResponse } from '@nexconn/server-sdk';
 
 const instance: OpenChannelParticipantExistResponse = {
     code,

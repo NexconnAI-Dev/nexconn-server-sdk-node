@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { ChannelTagAddRequest } from 'nexconn-sdk-node';
+import { ChannelTagAddRequest } from '@nexconn/server-sdk';
 
 const instance: ChannelTagAddRequest = {
     userId,

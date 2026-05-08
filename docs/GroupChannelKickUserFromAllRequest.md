@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { GroupChannelKickUserFromAllRequest } from 'nexconn-sdk-node';
+import { GroupChannelKickUserFromAllRequest } from '@nexconn/server-sdk';
 
 const instance: GroupChannelKickUserFromAllRequest = {
     userId,

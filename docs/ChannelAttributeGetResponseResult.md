@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { ChannelAttributeGetResponseResult } from 'nexconn-sdk-node';
+import { ChannelAttributeGetResponseResult } from '@nexconn/server-sdk';
 
 const instance: ChannelAttributeGetResponseResult = {
     channelId,

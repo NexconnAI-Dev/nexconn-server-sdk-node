@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { OpenChannelMetadataBatchRemoveRequest } from 'nexconn-sdk-node';
+import { OpenChannelMetadataBatchRemoveRequest } from '@nexconn/server-sdk';
 
 const instance: OpenChannelMetadataBatchRemoveRequest = {
     channelId,

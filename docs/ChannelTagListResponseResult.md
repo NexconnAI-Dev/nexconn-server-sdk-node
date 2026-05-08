@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { ChannelTagListResponseResult } from 'nexconn-sdk-node';
+import { ChannelTagListResponseResult } from '@nexconn/server-sdk';
 
 const instance: ChannelTagListResponseResult = {
     tagId,

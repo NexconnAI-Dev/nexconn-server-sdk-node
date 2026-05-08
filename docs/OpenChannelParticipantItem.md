@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { OpenChannelParticipantItem } from 'nexconn-sdk-node';
+import { OpenChannelParticipantItem } from '@nexconn/server-sdk';
 
 const instance: OpenChannelParticipantItem = {
     participantId,

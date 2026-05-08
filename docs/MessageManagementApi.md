@@ -33,7 +33,7 @@ import {
     MessageManagementApi,
     Configuration,
     OpenChannelBroadcastRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -94,7 +94,7 @@ import {
     MessageManagementApi,
     Configuration,
     ChannelMessageHistoryDeleteRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -155,7 +155,7 @@ import {
     MessageManagementApi,
     Configuration,
     ChannelTypeMessageMetadataDeleteRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -215,7 +215,7 @@ import {
     MessageManagementApi,
     Configuration,
     CommunityChannelMessageMetadataDeleteRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -276,7 +276,7 @@ import {
     MessageManagementApi,
     Configuration,
     MessageDeleteRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -337,7 +337,7 @@ import {
     MessageManagementApi,
     Configuration,
     ChannelTypeMessageMetadataListRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -397,7 +397,7 @@ import {
     MessageManagementApi,
     Configuration,
     CommunityChannelMessageMetadataListRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -458,7 +458,7 @@ import {
     MessageManagementApi,
     Configuration,
     CommunityChannelMessageSendRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -519,7 +519,7 @@ import {
     MessageManagementApi,
     Configuration,
     DirectChannelMessageSendRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -580,7 +580,7 @@ import {
     MessageManagementApi,
     Configuration,
     GroupChannelMessageSendRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -641,7 +641,7 @@ import {
     MessageManagementApi,
     Configuration,
     OpenChannelMessageSendRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -702,7 +702,7 @@ import {
     MessageManagementApi,
     Configuration,
     MessageMetadataSetRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -762,7 +762,7 @@ import {
     MessageManagementApi,
     Configuration,
     CommunityChannelMessageMetadataSetRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -822,7 +822,7 @@ import {
     MessageManagementApi,
     Configuration,
     CommunityChannelMessageUpdateRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -882,7 +882,7 @@ import {
     MessageManagementApi,
     Configuration,
     DirectChannelMessageUpdateRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -942,7 +942,7 @@ import {
     MessageManagementApi,
     Configuration,
     GroupChannelMessageUpdateRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(

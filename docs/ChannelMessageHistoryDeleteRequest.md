@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { ChannelMessageHistoryDeleteRequest } from 'nexconn-sdk-node';
+import { ChannelMessageHistoryDeleteRequest } from '@nexconn/server-sdk';
 
 const instance: ChannelMessageHistoryDeleteRequest = {
     channelType,

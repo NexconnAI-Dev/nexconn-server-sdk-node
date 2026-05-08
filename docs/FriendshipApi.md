@@ -24,7 +24,7 @@ import {
     FriendshipApi,
     Configuration,
     FriendAddRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -84,7 +84,7 @@ import {
     FriendshipApi,
     Configuration,
     FriendPermissionGetRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -144,7 +144,7 @@ import {
     FriendshipApi,
     Configuration,
     FriendRelationshipGetRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -204,7 +204,7 @@ import {
     FriendshipApi,
     Configuration,
     FriendListRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -264,7 +264,7 @@ import {
     FriendshipApi,
     Configuration,
     FriendCleanRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -324,7 +324,7 @@ import {
     FriendshipApi,
     Configuration,
     FriendDeleteRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -384,7 +384,7 @@ import {
     FriendshipApi,
     Configuration,
     FriendPermissionSetRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -444,7 +444,7 @@ import {
     FriendshipApi,
     Configuration,
     FriendProfileSetRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(

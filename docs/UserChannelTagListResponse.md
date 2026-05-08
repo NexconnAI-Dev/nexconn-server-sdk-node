@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { UserChannelTagListResponse } from 'nexconn-sdk-node';
+import { UserChannelTagListResponse } from '@nexconn/server-sdk';
 
 const instance: UserChannelTagListResponse = {
     code,

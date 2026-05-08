@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { ProfanityWordDeleteRequest } from 'nexconn-sdk-node';
+import { ProfanityWordDeleteRequest } from '@nexconn/server-sdk';
 
 const instance: ProfanityWordDeleteRequest = {
     word,

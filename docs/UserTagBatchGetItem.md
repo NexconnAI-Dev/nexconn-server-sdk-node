@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { UserTagBatchGetItem } from 'nexconn-sdk-node';
+import { UserTagBatchGetItem } from '@nexconn/server-sdk';
 
 const instance: UserTagBatchGetItem = {
     userId,

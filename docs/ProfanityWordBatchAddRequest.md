@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { ProfanityWordBatchAddRequest } from 'nexconn-sdk-node';
+import { ProfanityWordBatchAddRequest } from '@nexconn/server-sdk';
 
 const instance: ProfanityWordBatchAddRequest = {
     words,

@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { DirectChannelMessageUpdateRequest } from 'nexconn-sdk-node';
+import { DirectChannelMessageUpdateRequest } from '@nexconn/server-sdk';
 
 const instance: DirectChannelMessageUpdateRequest = {
     fromUserId,

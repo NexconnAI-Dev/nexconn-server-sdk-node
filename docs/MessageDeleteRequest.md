@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { MessageDeleteRequest } from 'nexconn-sdk-node';
+import { MessageDeleteRequest } from '@nexconn/server-sdk';
 
 const instance: MessageDeleteRequest = {
     fromUserId,

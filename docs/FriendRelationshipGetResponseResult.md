@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { FriendRelationshipGetResponseResult } from 'nexconn-sdk-node';
+import { FriendRelationshipGetResponseResult } from '@nexconn/server-sdk';
 
 const instance: FriendRelationshipGetResponseResult = {
     friendships,

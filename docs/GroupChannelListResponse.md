@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { GroupChannelListResponse } from 'nexconn-sdk-node';
+import { GroupChannelListResponse } from '@nexconn/server-sdk';
 
 const instance: GroupChannelListResponse = {
     code,

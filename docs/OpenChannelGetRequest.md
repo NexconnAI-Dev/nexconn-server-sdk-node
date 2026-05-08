@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { OpenChannelGetRequest } from 'nexconn-sdk-node';
+import { OpenChannelGetRequest } from '@nexconn/server-sdk';
 
 const instance: OpenChannelGetRequest = {
     channelId,

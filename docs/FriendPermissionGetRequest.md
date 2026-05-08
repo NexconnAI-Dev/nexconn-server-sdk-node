@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { FriendPermissionGetRequest } from 'nexconn-sdk-node';
+import { FriendPermissionGetRequest } from '@nexconn/server-sdk';
 
 const instance: FriendPermissionGetRequest = {
     userIds,

@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { OpenChannelAllowedSenderListUpdateRequest } from 'nexconn-sdk-node';
+import { OpenChannelAllowedSenderListUpdateRequest } from '@nexconn/server-sdk';
 
 const instance: OpenChannelAllowedSenderListUpdateRequest = {
     channelId,

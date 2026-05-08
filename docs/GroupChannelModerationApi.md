@@ -26,7 +26,7 @@ import {
     GroupChannelModerationApi,
     Configuration,
     GroupChannelAllowedSenderListUpdateRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -87,7 +87,7 @@ import {
     GroupChannelModerationApi,
     Configuration,
     GroupChannelFreezeListUpdateRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -148,7 +148,7 @@ import {
     GroupChannelModerationApi,
     Configuration,
     GroupChannelUserMuteListAddRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -209,7 +209,7 @@ import {
     GroupChannelModerationApi,
     Configuration,
     GroupChannelAllowedSenderListGetRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -270,7 +270,7 @@ import {
     GroupChannelModerationApi,
     Configuration,
     GroupChannelFreezeListGetRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -331,7 +331,7 @@ import {
     GroupChannelModerationApi,
     Configuration,
     GroupChannelUserMuteListGetRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -392,7 +392,7 @@ import {
     GroupChannelModerationApi,
     Configuration,
     GroupChannelAllowedSenderListUpdateRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -453,7 +453,7 @@ import {
     GroupChannelModerationApi,
     Configuration,
     GroupChannelFreezeListUpdateRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -514,7 +514,7 @@ import {
     GroupChannelModerationApi,
     Configuration,
     GroupChannelUserMuteListRemoveRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(

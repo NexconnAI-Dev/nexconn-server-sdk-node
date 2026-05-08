@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { MessageMetadataListItem } from 'nexconn-sdk-node';
+import { MessageMetadataListItem } from '@nexconn/server-sdk';
 
 const instance: MessageMetadataListItem = {
     key,

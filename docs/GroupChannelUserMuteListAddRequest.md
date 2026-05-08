@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { GroupChannelUserMuteListAddRequest } from 'nexconn-sdk-node';
+import { GroupChannelUserMuteListAddRequest } from '@nexconn/server-sdk';
 
 const instance: GroupChannelUserMuteListAddRequest = {
     channelId,

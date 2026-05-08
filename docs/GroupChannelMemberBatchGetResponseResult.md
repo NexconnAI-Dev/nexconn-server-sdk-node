@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { GroupChannelMemberBatchGetResponseResult } from 'nexconn-sdk-node';
+import { GroupChannelMemberBatchGetResponseResult } from '@nexconn/server-sdk';
 
 const instance: GroupChannelMemberBatchGetResponseResult = {
     pageToken,

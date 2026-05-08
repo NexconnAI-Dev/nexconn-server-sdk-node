@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { FriendRelationshipItem } from 'nexconn-sdk-node';
+import { FriendRelationshipItem } from '@nexconn/server-sdk';
 
 const instance: FriendRelationshipItem = {
     userId,

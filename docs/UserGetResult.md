@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { UserGetResult } from 'nexconn-sdk-node';
+import { UserGetResult } from '@nexconn/server-sdk';
 
 const instance: UserGetResult = {
     name,

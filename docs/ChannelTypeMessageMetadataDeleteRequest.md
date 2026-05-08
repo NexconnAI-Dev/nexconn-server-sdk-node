@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { ChannelTypeMessageMetadataDeleteRequest } from 'nexconn-sdk-node';
+import { ChannelTypeMessageMetadataDeleteRequest } from '@nexconn/server-sdk';
 
 const instance: ChannelTypeMessageMetadataDeleteRequest = {
     messageId,

@@ -38,7 +38,7 @@ import {
     GroupChannelManagementApi,
     Configuration,
     GroupChannelAdminUsersRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -99,7 +99,7 @@ import {
     GroupChannelManagementApi,
     Configuration,
     GroupChannelMemberFavoritesUpdateRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -160,7 +160,7 @@ import {
     GroupChannelManagementApi,
     Configuration,
     GroupChannelMemberBatchGetRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -221,7 +221,7 @@ import {
     GroupChannelManagementApi,
     Configuration,
     GroupChannelProfileListRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -282,7 +282,7 @@ import {
     GroupChannelManagementApi,
     Configuration,
     GroupChannelCreateRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -343,7 +343,7 @@ import {
     GroupChannelManagementApi,
     Configuration,
     GroupChannelAliasGetRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -404,7 +404,7 @@ import {
     GroupChannelManagementApi,
     Configuration,
     GroupChannelDismissRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -465,7 +465,7 @@ import {
     GroupChannelManagementApi,
     Configuration,
     GroupChannelAliasGetRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -526,7 +526,7 @@ import {
     GroupChannelManagementApi,
     Configuration,
     GroupChannelJoinRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -587,7 +587,7 @@ import {
     GroupChannelManagementApi,
     Configuration,
     GroupChannelKickUserFromAllRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -648,7 +648,7 @@ import {
     GroupChannelManagementApi,
     Configuration,
     GroupChannelMemberFavoritesListRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -709,7 +709,7 @@ import {
     GroupChannelManagementApi,
     Configuration,
     GroupChannelMemberListRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -770,7 +770,7 @@ import {
     GroupChannelManagementApi,
     Configuration,
     GroupChannelListRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -831,7 +831,7 @@ import {
     GroupChannelManagementApi,
     Configuration,
     GroupChannelJoinedListRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -892,7 +892,7 @@ import {
     GroupChannelManagementApi,
     Configuration,
     GroupChannelQuitRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -953,7 +953,7 @@ import {
     GroupChannelManagementApi,
     Configuration,
     GroupChannelAdminUsersRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -1014,7 +1014,7 @@ import {
     GroupChannelManagementApi,
     Configuration,
     GroupChannelMemberFavoritesUpdateRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -1075,7 +1075,7 @@ import {
     GroupChannelManagementApi,
     Configuration,
     GroupChannelAliasSetRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -1136,7 +1136,7 @@ import {
     GroupChannelManagementApi,
     Configuration,
     GroupChannelMemberSetRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -1197,7 +1197,7 @@ import {
     GroupChannelManagementApi,
     Configuration,
     GroupChannelTransferOwnerRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -1258,7 +1258,7 @@ import {
     GroupChannelManagementApi,
     Configuration,
     GroupChannelProfileUpdateRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(

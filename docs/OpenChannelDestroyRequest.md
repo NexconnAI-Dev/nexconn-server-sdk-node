@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { OpenChannelDestroyRequest } from 'nexconn-sdk-node';
+import { OpenChannelDestroyRequest } from '@nexconn/server-sdk';
 
 const instance: OpenChannelDestroyRequest = {
     channelIds,

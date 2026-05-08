@@ -20,7 +20,7 @@ import {
     OpenChannelMessagePriorityApi,
     Configuration,
     OpenChannelLowPriorityMessageTypeListRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -80,7 +80,7 @@ Rate limit: 100/sec.
 import {
     OpenChannelMessagePriorityApi,
     Configuration
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -132,7 +132,7 @@ import {
     OpenChannelMessagePriorityApi,
     Configuration,
     OpenChannelLowPriorityMessageTypeListRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(

@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { ChannelTypeMuteListResponseResult } from 'nexconn-sdk-node';
+import { ChannelTypeMuteListResponseResult } from '@nexconn/server-sdk';
 
 const instance: ChannelTypeMuteListResponseResult = {
     totalCount,

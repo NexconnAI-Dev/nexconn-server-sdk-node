@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { SystemChannelPushAudience } from 'nexconn-sdk-node';
+import { SystemChannelPushAudience } from '@nexconn/server-sdk';
 
 const instance: SystemChannelPushAudience = {
     userId,

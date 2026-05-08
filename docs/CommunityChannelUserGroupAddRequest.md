@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { CommunityChannelUserGroupAddRequest } from 'nexconn-sdk-node';
+import { CommunityChannelUserGroupAddRequest } from '@nexconn/server-sdk';
 
 const instance: CommunityChannelUserGroupAddRequest = {
     channelId,

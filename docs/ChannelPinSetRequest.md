@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { ChannelPinSetRequest } from 'nexconn-sdk-node';
+import { ChannelPinSetRequest } from '@nexconn/server-sdk';
 
 const instance: ChannelPinSetRequest = {
     userId,
