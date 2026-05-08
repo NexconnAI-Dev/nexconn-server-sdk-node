@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { UserChannelTagAddRequest } from 'nexconn-sdk-node';
+import { UserChannelTagAddRequest } from '@nexconn/server-sdk';
 
 const instance: UserChannelTagAddRequest = {
     userId,

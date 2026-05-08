@@ -20,7 +20,7 @@ import {
     UserBlocklistApi,
     Configuration,
     UserBlocklistAddRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -81,7 +81,7 @@ import {
     UserBlocklistApi,
     Configuration,
     UserBlocklistGetRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -142,7 +142,7 @@ import {
     UserBlocklistApi,
     Configuration,
     UserBlocklistRemoveRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(

@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { OpenChannelParticipantBanListGetResponseResult } from 'nexconn-sdk-node';
+import { OpenChannelParticipantBanListGetResponseResult } from '@nexconn/server-sdk';
 
 const instance: OpenChannelParticipantBanListGetResponseResult = {
     bannedParticipants,

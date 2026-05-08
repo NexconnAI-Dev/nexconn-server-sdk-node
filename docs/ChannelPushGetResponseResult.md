@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { ChannelPushGetResponseResult } from 'nexconn-sdk-node';
+import { ChannelPushGetResponseResult } from '@nexconn/server-sdk';
 
 const instance: ChannelPushGetResponseResult = {
     noDisturbLevel,

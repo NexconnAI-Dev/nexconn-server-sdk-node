@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { UserOperationResponse } from 'nexconn-sdk-node';
+import { UserOperationResponse } from '@nexconn/server-sdk';
 
 const instance: UserOperationResponse = {
     code,

@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { FriendListResponseResult } from 'nexconn-sdk-node';
+import { FriendListResponseResult } from '@nexconn/server-sdk';
 
 const instance: FriendListResponseResult = {
     pageToken,

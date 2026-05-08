@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { GroupChannelQuitRequest } from 'nexconn-sdk-node';
+import { GroupChannelQuitRequest } from '@nexconn/server-sdk';
 
 const instance: GroupChannelQuitRequest = {
     channelId,

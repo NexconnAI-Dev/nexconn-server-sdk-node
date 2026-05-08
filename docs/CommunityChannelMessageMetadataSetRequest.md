@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { CommunityChannelMessageMetadataSetRequest } from 'nexconn-sdk-node';
+import { CommunityChannelMessageMetadataSetRequest } from '@nexconn/server-sdk';
 
 const instance: CommunityChannelMessageMetadataSetRequest = {
     messageId,

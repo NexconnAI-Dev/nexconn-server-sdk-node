@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { ChannelNotificationState } from 'nexconn-sdk-node';
+import { ChannelNotificationState } from '@nexconn/server-sdk';
 
 const instance: ChannelNotificationState = {
     level,

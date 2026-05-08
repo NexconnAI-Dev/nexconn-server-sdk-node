@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { UserSoftDeletedListRequest } from 'nexconn-sdk-node';
+import { UserSoftDeletedListRequest } from '@nexconn/server-sdk';
 
 const instance: UserSoftDeletedListRequest = {
     page,

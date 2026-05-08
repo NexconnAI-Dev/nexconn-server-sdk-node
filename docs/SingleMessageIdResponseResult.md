@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { SingleMessageIdResponseResult } from 'nexconn-sdk-node';
+import { SingleMessageIdResponseResult } from '@nexconn/server-sdk';
 
 const instance: SingleMessageIdResponseResult = {
     messageId,

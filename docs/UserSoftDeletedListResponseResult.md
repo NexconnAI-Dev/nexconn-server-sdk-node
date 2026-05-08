@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { UserSoftDeletedListResponseResult } from 'nexconn-sdk-node';
+import { UserSoftDeletedListResponseResult } from '@nexconn/server-sdk';
 
 const instance: UserSoftDeletedListResponseResult = {
     userIds,

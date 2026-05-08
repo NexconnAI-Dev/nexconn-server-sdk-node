@@ -29,7 +29,7 @@ import {
     ChannelManagementApi,
     Configuration,
     ChannelTagAddRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -90,7 +90,7 @@ import {
     ChannelManagementApi,
     Configuration,
     UserChannelTagAddRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -151,7 +151,7 @@ import {
     ChannelManagementApi,
     Configuration,
     ChannelAttributeGetRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -212,7 +212,7 @@ import {
     ChannelManagementApi,
     Configuration,
     ChannelPushGetRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -273,7 +273,7 @@ import {
     ChannelManagementApi,
     Configuration,
     ChannelTypeNotificationGetRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -334,7 +334,7 @@ import {
     ChannelManagementApi,
     Configuration,
     ChannelTagListRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -394,7 +394,7 @@ import {
     ChannelManagementApi,
     Configuration,
     UserChannelTagListRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -455,7 +455,7 @@ import {
     ChannelManagementApi,
     Configuration,
     ChannelTagRemoveRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -516,7 +516,7 @@ import {
     ChannelManagementApi,
     Configuration,
     UserChannelTagRemoveRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -577,7 +577,7 @@ import {
     ChannelManagementApi,
     Configuration,
     ChannelPinSetRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -638,7 +638,7 @@ import {
     ChannelManagementApi,
     Configuration,
     ChannelPushSetRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -699,7 +699,7 @@ import {
     ChannelManagementApi,
     Configuration,
     ChannelTypeNotificationSetRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(

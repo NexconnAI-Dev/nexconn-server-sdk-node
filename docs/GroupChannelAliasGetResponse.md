@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { GroupChannelAliasGetResponse } from 'nexconn-sdk-node';
+import { GroupChannelAliasGetResponse } from '@nexconn/server-sdk';
 
 const instance: GroupChannelAliasGetResponse = {
     code,

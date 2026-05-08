@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { SystemChannelBroadcastOnlineRequest } from 'nexconn-sdk-node';
+import { SystemChannelBroadcastOnlineRequest } from '@nexconn/server-sdk';
 
 const instance: SystemChannelBroadcastOnlineRequest = {
     fromUserId,

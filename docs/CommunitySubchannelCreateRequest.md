@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { CommunitySubchannelCreateRequest } from 'nexconn-sdk-node';
+import { CommunitySubchannelCreateRequest } from '@nexconn/server-sdk';
 
 const instance: CommunitySubchannelCreateRequest = {
     channelId,

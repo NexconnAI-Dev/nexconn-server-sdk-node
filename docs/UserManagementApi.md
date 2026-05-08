@@ -32,7 +32,7 @@ import {
     UserManagementApi,
     Configuration,
     UserBanRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -93,7 +93,7 @@ import {
     UserManagementApi,
     Configuration,
     UserTagBatchGetRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -154,7 +154,7 @@ import {
     UserManagementApi,
     Configuration,
     UserTagBatchSetRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -215,7 +215,7 @@ import {
     UserManagementApi,
     Configuration,
     AccessTokenExpireRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -276,7 +276,7 @@ import {
     UserManagementApi,
     Configuration,
     UserGetRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -337,7 +337,7 @@ import {
     UserManagementApi,
     Configuration,
     UserConnectionStatusRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -398,7 +398,7 @@ import {
     UserManagementApi,
     Configuration,
     AccessTokenIssueRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -459,7 +459,7 @@ import {
     UserManagementApi,
     Configuration,
     UserBanListRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -520,7 +520,7 @@ import {
     UserManagementApi,
     Configuration,
     ChannelTypeMuteListRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -581,7 +581,7 @@ import {
     UserManagementApi,
     Configuration,
     UserSoftDeletedListRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -642,7 +642,7 @@ import {
     UserManagementApi,
     Configuration,
     UserIdsMax100Request
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -703,7 +703,7 @@ import {
     UserManagementApi,
     Configuration,
     ChannelTypeMuteSetRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -764,7 +764,7 @@ import {
     UserManagementApi,
     Configuration,
     UserIdsMax100Request
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -825,7 +825,7 @@ import {
     UserManagementApi,
     Configuration,
     UserIdsMax20Request
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -886,7 +886,7 @@ import {
     UserManagementApi,
     Configuration,
     UserUpdateRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(

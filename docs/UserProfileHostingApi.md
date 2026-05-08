@@ -20,7 +20,7 @@ import {
     UserProfileHostingApi,
     Configuration,
     UserIdsMax20Request
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -80,7 +80,7 @@ import {
     UserProfileHostingApi,
     Configuration,
     UserIdsMax20Request
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -140,7 +140,7 @@ import {
     UserProfileHostingApi,
     Configuration,
     UserProfileListRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -200,7 +200,7 @@ import {
     UserProfileHostingApi,
     Configuration,
     UserProfileSetRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(

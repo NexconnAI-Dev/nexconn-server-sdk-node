@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { GroupChannelTransferOwnerRequest } from 'nexconn-sdk-node';
+import { GroupChannelTransferOwnerRequest } from '@nexconn/server-sdk';
 
 const instance: GroupChannelTransferOwnerRequest = {
     channelId,

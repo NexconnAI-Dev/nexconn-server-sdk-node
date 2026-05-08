@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { OpenChannelAllowedSenderListGetResponse } from 'nexconn-sdk-node';
+import { OpenChannelAllowedSenderListGetResponse } from '@nexconn/server-sdk';
 
 const instance: OpenChannelAllowedSenderListGetResponse = {
     code,

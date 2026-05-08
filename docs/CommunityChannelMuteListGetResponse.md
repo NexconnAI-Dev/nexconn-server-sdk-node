@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { CommunityChannelMuteListGetResponse } from 'nexconn-sdk-node';
+import { CommunityChannelMuteListGetResponse } from '@nexconn/server-sdk';
 
 const instance: CommunityChannelMuteListGetResponse = {
     code,

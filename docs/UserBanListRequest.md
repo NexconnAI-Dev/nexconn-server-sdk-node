@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { UserBanListRequest } from 'nexconn-sdk-node';
+import { UserBanListRequest } from '@nexconn/server-sdk';
 
 const instance: UserBanListRequest = {
     page,

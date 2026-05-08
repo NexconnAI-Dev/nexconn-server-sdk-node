@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { ChannelTagTargetItem } from 'nexconn-sdk-node';
+import { ChannelTagTargetItem } from '@nexconn/server-sdk';
 
 const instance: ChannelTagTargetItem = {
     channelId,

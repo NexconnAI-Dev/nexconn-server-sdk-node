@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { MessageRecord } from 'nexconn-sdk-node';
+import { MessageRecord } from '@nexconn/server-sdk';
 
 const instance: MessageRecord = {
     channelId,

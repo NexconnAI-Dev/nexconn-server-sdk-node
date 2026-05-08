@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { GroupChannelAliasSetRequest } from 'nexconn-sdk-node';
+import { GroupChannelAliasSetRequest } from '@nexconn/server-sdk';
 
 const instance: GroupChannelAliasSetRequest = {
     channelId,

@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { SystemChannelBroadcastDeleteRequest } from 'nexconn-sdk-node';
+import { SystemChannelBroadcastDeleteRequest } from '@nexconn/server-sdk';
 
 const instance: SystemChannelBroadcastDeleteRequest = {
     fromUserId,

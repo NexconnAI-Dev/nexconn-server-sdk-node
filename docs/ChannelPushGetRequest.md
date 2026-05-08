@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { ChannelPushGetRequest } from 'nexconn-sdk-node';
+import { ChannelPushGetRequest } from '@nexconn/server-sdk';
 
 const instance: ChannelPushGetRequest = {
     channelType,

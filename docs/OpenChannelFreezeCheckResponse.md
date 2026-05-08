@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { OpenChannelFreezeCheckResponse } from 'nexconn-sdk-node';
+import { OpenChannelFreezeCheckResponse } from '@nexconn/server-sdk';
 
 const instance: OpenChannelFreezeCheckResponse = {
     code,

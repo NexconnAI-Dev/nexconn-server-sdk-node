@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { OpenChannelMetadataEntry } from 'nexconn-sdk-node';
+import { OpenChannelMetadataEntry } from '@nexconn/server-sdk';
 
 const instance: OpenChannelMetadataEntry = {
     key,

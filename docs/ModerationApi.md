@@ -20,7 +20,7 @@ import {
     ModerationApi,
     Configuration,
     ProfanityWordBatchAddRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -80,7 +80,7 @@ import {
     ModerationApi,
     Configuration,
     ProfanityWordBatchDeleteRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -140,7 +140,7 @@ import {
     ModerationApi,
     Configuration,
     ProfanityWordListRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -200,7 +200,7 @@ import {
     ModerationApi,
     Configuration,
     ProfanityWordDeleteRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(

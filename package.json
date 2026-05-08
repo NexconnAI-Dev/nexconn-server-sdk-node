@@ -1,18 +1,18 @@
 {
-  "name": "nexconn-sdk-node",
+  "name": "@nexconn/server-sdk",
   "version": "0.1.0",
   "description": "Nexconn SDK for TypeScript",
   "author": "Nexconn",
   "repository": {
     "type": "git",
-    "url": "https://gitlab2.rongcloud.net/public-server/nexconn-server-sdk-node.git"
+    "url": "https://github.com/NexconnAI-Dev/nexconn-server-sdk-node.git"
   },
   "keywords": [
     "axios",
     "typescript",
     "nexconn",
     "nexconn",
-    "nexconn-sdk-node"
+    "@nexconn/server-sdk"
   ],
   "license": "MIT",
   "main": "./dist/index.js",

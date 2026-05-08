@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { UserBlocklistGetResponse } from 'nexconn-sdk-node';
+import { UserBlocklistGetResponse } from '@nexconn/server-sdk';
 
 const instance: UserBlocklistGetResponse = {
     code,

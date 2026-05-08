@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { ChannelMessageSendResponseResult } from 'nexconn-sdk-node';
+import { ChannelMessageSendResponseResult } from '@nexconn/server-sdk';
 
 const instance: ChannelMessageSendResponseResult = {
     messageIds,

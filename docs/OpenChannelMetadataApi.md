@@ -20,7 +20,7 @@ import {
     OpenChannelMetadataApi,
     Configuration,
     OpenChannelMetadataBatchGetRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -81,7 +81,7 @@ import {
     OpenChannelMetadataApi,
     Configuration,
     OpenChannelMetadataBatchRemoveRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -142,7 +142,7 @@ import {
     OpenChannelMetadataApi,
     Configuration,
     OpenChannelMetadataBatchSetRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(

@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { OpenChannelFreezeListUpdateRequest } from 'nexconn-sdk-node';
+import { OpenChannelFreezeListUpdateRequest } from '@nexconn/server-sdk';
 
 const instance: OpenChannelFreezeListUpdateRequest = {
     channelId,

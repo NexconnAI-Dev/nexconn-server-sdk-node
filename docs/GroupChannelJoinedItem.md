@@ -20,7 +20,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { GroupChannelJoinedItem } from 'nexconn-sdk-node';
+import { GroupChannelJoinedItem } from '@nexconn/server-sdk';
 
 const instance: GroupChannelJoinedItem = {
     channelId,

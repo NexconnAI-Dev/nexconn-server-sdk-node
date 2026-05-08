@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { GroupChannelProfileUpdateRequest } from 'nexconn-sdk-node';
+import { GroupChannelProfileUpdateRequest } from '@nexconn/server-sdk';
 
 const instance: GroupChannelProfileUpdateRequest = {
     channelId,

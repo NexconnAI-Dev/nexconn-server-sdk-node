@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { OpenChannelLowPriorityMessageTypeListRequest } from 'nexconn-sdk-node';
+import { OpenChannelLowPriorityMessageTypeListRequest } from '@nexconn/server-sdk';
 
 const instance: OpenChannelLowPriorityMessageTypeListRequest = {
     messageTypes,

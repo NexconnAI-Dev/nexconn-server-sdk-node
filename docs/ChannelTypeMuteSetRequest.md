@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { ChannelTypeMuteSetRequest } from 'nexconn-sdk-node';
+import { ChannelTypeMuteSetRequest } from '@nexconn/server-sdk';
 
 const instance: ChannelTypeMuteSetRequest = {
     userIds,

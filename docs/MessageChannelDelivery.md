@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { MessageChannelDelivery } from 'nexconn-sdk-node';
+import { MessageChannelDelivery } from '@nexconn/server-sdk';
 
 const instance: MessageChannelDelivery = {
     channelId,

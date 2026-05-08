@@ -20,7 +20,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { SystemChannelMessageSendRequest } from 'nexconn-sdk-node';
+import { SystemChannelMessageSendRequest } from '@nexconn/server-sdk';
 
 const instance: SystemChannelMessageSendRequest = {
     fromUserId,

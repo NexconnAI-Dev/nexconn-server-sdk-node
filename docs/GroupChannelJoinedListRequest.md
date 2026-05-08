@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { GroupChannelJoinedListRequest } from 'nexconn-sdk-node';
+import { GroupChannelJoinedListRequest } from '@nexconn/server-sdk';
 
 const instance: GroupChannelJoinedListRequest = {
     userId,

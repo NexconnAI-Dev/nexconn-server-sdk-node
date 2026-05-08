@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { GroupChannelListRequest } from 'nexconn-sdk-node';
+import { GroupChannelListRequest } from '@nexconn/server-sdk';
 
 const instance: GroupChannelListRequest = {
     pageToken,

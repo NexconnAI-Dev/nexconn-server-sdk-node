@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { OpenChannelDestroyTypeSetRequest } from 'nexconn-sdk-node';
+import { OpenChannelDestroyTypeSetRequest } from '@nexconn/server-sdk';
 
 const instance: OpenChannelDestroyTypeSetRequest = {
     channelId,

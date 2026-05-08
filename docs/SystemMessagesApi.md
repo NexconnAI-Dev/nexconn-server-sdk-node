@@ -23,7 +23,7 @@ import {
     SystemMessagesApi,
     Configuration,
     SystemChannelBroadcastOnlineRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -84,7 +84,7 @@ import {
     SystemMessagesApi,
     Configuration,
     SystemChannelBroadcastAllRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -145,7 +145,7 @@ import {
     SystemMessagesApi,
     Configuration,
     SystemChannelBroadcastDeleteRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -206,7 +206,7 @@ import {
     SystemMessagesApi,
     Configuration,
     SystemChannelMessageSendRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -267,7 +267,7 @@ import {
     SystemMessagesApi,
     Configuration,
     SystemChannelPushRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -328,7 +328,7 @@ import {
     SystemMessagesApi,
     Configuration,
     SystemChannelPushRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(

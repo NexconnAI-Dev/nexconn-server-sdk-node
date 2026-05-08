@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { GroupChannelListResponseResult } from 'nexconn-sdk-node';
+import { GroupChannelListResponseResult } from '@nexconn/server-sdk';
 
 const instance: GroupChannelListResponseResult = {
     pageToken,

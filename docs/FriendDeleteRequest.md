@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { FriendDeleteRequest } from 'nexconn-sdk-node';
+import { FriendDeleteRequest } from '@nexconn/server-sdk';
 
 const instance: FriendDeleteRequest = {
     userId,

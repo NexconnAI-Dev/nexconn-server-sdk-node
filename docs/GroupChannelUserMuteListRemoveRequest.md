@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { GroupChannelUserMuteListRemoveRequest } from 'nexconn-sdk-node';
+import { GroupChannelUserMuteListRemoveRequest } from '@nexconn/server-sdk';
 
 const instance: GroupChannelUserMuteListRemoveRequest = {
     channelId,

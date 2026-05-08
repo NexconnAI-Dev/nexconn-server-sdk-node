@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { GroupChannelFavoriteItem } from 'nexconn-sdk-node';
+import { GroupChannelFavoriteItem } from '@nexconn/server-sdk';
 
 const instance: GroupChannelFavoriteItem = {
     userId,

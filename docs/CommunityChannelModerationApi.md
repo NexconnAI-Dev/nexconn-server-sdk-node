@@ -24,7 +24,7 @@ import {
     CommunityChannelModerationApi,
     Configuration,
     CommunityChannelAllowedSenderListUpdateRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -84,7 +84,7 @@ import {
     CommunityChannelModerationApi,
     Configuration,
     CommunityChannelMuteListAddRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -144,7 +144,7 @@ import {
     CommunityChannelModerationApi,
     Configuration,
     CommunityChannelFreezeListGetRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -204,7 +204,7 @@ import {
     CommunityChannelModerationApi,
     Configuration,
     CommunityChannelAllowedSenderListGetRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -264,7 +264,7 @@ import {
     CommunityChannelModerationApi,
     Configuration,
     CommunityChannelMuteListGetRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -324,7 +324,7 @@ import {
     CommunityChannelModerationApi,
     Configuration,
     CommunityChannelAllowedSenderListUpdateRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -384,7 +384,7 @@ import {
     CommunityChannelModerationApi,
     Configuration,
     CommunityChannelMuteListRemoveRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -444,7 +444,7 @@ import {
     CommunityChannelModerationApi,
     Configuration,
     CommunityChannelFreezeListSetRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(

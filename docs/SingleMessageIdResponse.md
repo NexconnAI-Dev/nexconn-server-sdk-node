@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { SingleMessageIdResponse } from 'nexconn-sdk-node';
+import { SingleMessageIdResponse } from '@nexconn/server-sdk';
 
 const instance: SingleMessageIdResponse = {
     code,

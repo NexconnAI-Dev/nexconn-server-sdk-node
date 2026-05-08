@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { SystemChannelPushMessage } from 'nexconn-sdk-node';
+import { SystemChannelPushMessage } from '@nexconn/server-sdk';
 
 const instance: SystemChannelPushMessage = {
     content,

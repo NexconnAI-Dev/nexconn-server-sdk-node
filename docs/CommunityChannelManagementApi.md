@@ -41,7 +41,7 @@ import {
     CommunityChannelManagementApi,
     Configuration,
     CommunityChannelUserGroupUsersRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -101,7 +101,7 @@ import {
     CommunityChannelManagementApi,
     Configuration,
     CommunityChannelUserGroupAddRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -161,7 +161,7 @@ import {
     CommunityChannelManagementApi,
     Configuration,
     CommunityPrivateSubchannelMembersRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -221,7 +221,7 @@ import {
     CommunityChannelManagementApi,
     Configuration,
     CommunityChannelUserGroupBindingRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -281,7 +281,7 @@ import {
     CommunityChannelManagementApi,
     Configuration,
     CommunityChannelMemberRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -341,7 +341,7 @@ import {
     CommunityChannelManagementApi,
     Configuration,
     CommunityChannelCreateRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -401,7 +401,7 @@ import {
     CommunityChannelManagementApi,
     Configuration,
     CommunitySubchannelCreateRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -461,7 +461,7 @@ import {
     CommunityChannelManagementApi,
     Configuration,
     CommunitySubchannelKeyRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -521,7 +521,7 @@ import {
     CommunityChannelManagementApi,
     Configuration,
     CommunityChannelDismissRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -581,7 +581,7 @@ import {
     CommunityChannelManagementApi,
     Configuration,
     CommunityChannelMemberRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -641,7 +641,7 @@ import {
     CommunityChannelManagementApi,
     Configuration,
     CommunityChannelHistoryMessageListRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -701,7 +701,7 @@ import {
     CommunityChannelManagementApi,
     Configuration,
     CommunityChannelSubchannelUserGroupListRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -761,7 +761,7 @@ import {
     CommunityChannelManagementApi,
     Configuration,
     CommunityChannelUserGroupSubchannelListRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -821,7 +821,7 @@ import {
     CommunityChannelManagementApi,
     Configuration,
     CommunityChannelUserGroupListRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -881,7 +881,7 @@ import {
     CommunityChannelManagementApi,
     Configuration,
     CommunityChannelUserUserGroupListRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -941,7 +941,7 @@ import {
     CommunityChannelManagementApi,
     Configuration,
     CommunitySubchannelListRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -1001,7 +1001,7 @@ import {
     CommunityChannelManagementApi,
     Configuration,
     CommunityUserSubchannelListRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -1061,7 +1061,7 @@ import {
     CommunityChannelManagementApi,
     Configuration,
     CommunityPrivateSubchannelMemberListRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -1121,7 +1121,7 @@ import {
     CommunityChannelManagementApi,
     Configuration,
     CommunityChannelMemberRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -1181,7 +1181,7 @@ import {
     CommunityChannelManagementApi,
     Configuration,
     CommunityChannelUserGroupUsersRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -1241,7 +1241,7 @@ import {
     CommunityChannelManagementApi,
     Configuration,
     CommunityChannelUserGroupDeleteRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -1301,7 +1301,7 @@ import {
     CommunityChannelManagementApi,
     Configuration,
     CommunityPrivateSubchannelMembersRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -1361,7 +1361,7 @@ import {
     CommunityChannelManagementApi,
     Configuration,
     CommunityChannelUserGroupBindingRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -1421,7 +1421,7 @@ import {
     CommunityChannelManagementApi,
     Configuration,
     CommunityChannelUpdateRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -1481,7 +1481,7 @@ import {
     CommunityChannelManagementApi,
     Configuration,
     CommunitySubchannelTypeUpdateRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(

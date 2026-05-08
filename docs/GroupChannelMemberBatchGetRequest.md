@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { GroupChannelMemberBatchGetRequest } from 'nexconn-sdk-node';
+import { GroupChannelMemberBatchGetRequest } from '@nexconn/server-sdk';
 
 const instance: GroupChannelMemberBatchGetRequest = {
     channelId,

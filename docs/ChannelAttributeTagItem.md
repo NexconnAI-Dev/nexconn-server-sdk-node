@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { ChannelAttributeTagItem } from 'nexconn-sdk-node';
+import { ChannelAttributeTagItem } from '@nexconn/server-sdk';
 
 const instance: ChannelAttributeTagItem = {
     tagId,

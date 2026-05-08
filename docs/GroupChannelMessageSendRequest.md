@@ -26,7 +26,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { GroupChannelMessageSendRequest } from 'nexconn-sdk-node';
+import { GroupChannelMessageSendRequest } from '@nexconn/server-sdk';
 
 const instance: GroupChannelMessageSendRequest = {
     fromUserId,

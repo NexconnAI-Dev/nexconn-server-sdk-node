@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { ChannelAttributeGetRequest } from 'nexconn-sdk-node';
+import { ChannelAttributeGetRequest } from '@nexconn/server-sdk';
 
 const instance: ChannelAttributeGetRequest = {
     userId,

@@ -35,7 +35,7 @@ import {
     OpenChannelParticipantsModerationApi,
     Configuration,
     OpenChannelFreezeListUpdateRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -96,7 +96,7 @@ import {
     OpenChannelParticipantsModerationApi,
     Configuration,
     OpenChannelGlobalMuteListAddRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -157,7 +157,7 @@ import {
     OpenChannelParticipantsModerationApi,
     Configuration,
     OpenChannelAllowedSenderListUpdateRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -218,7 +218,7 @@ import {
     OpenChannelParticipantsModerationApi,
     Configuration,
     OpenChannelParticipantMuteListAddRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -279,7 +279,7 @@ import {
     OpenChannelParticipantsModerationApi,
     Configuration,
     OpenChannelParticipantMuteListAddRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -340,7 +340,7 @@ import {
     OpenChannelParticipantsModerationApi,
     Configuration,
     OpenChannelFreezeCheckRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -401,7 +401,7 @@ import {
     OpenChannelParticipantsModerationApi,
     Configuration,
     OpenChannelParticipantExistRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -461,7 +461,7 @@ Rate limit: 100/sec. The public endpoint list currently publishes this capabilit
 import {
     OpenChannelParticipantsModerationApi,
     Configuration
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -513,7 +513,7 @@ import {
     OpenChannelParticipantsModerationApi,
     Configuration,
     OpenChannelParticipantListByChannelRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -574,7 +574,7 @@ import {
     OpenChannelParticipantsModerationApi,
     Configuration,
     OpenChannelParticipantListByChannelRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -635,7 +635,7 @@ import {
     OpenChannelParticipantsModerationApi,
     Configuration,
     OpenChannelParticipantListByChannelRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -696,7 +696,7 @@ import {
     OpenChannelParticipantsModerationApi,
     Configuration,
     OpenChannelFreezeListGetRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -757,7 +757,7 @@ import {
     OpenChannelParticipantsModerationApi,
     Configuration,
     OpenChannelParticipantListRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -818,7 +818,7 @@ import {
     OpenChannelParticipantsModerationApi,
     Configuration,
     OpenChannelFreezeListUpdateRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -879,7 +879,7 @@ import {
     OpenChannelParticipantsModerationApi,
     Configuration,
     OpenChannelGlobalMuteListRemoveRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -940,7 +940,7 @@ import {
     OpenChannelParticipantsModerationApi,
     Configuration,
     OpenChannelAllowedSenderListUpdateRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -1001,7 +1001,7 @@ import {
     OpenChannelParticipantsModerationApi,
     Configuration,
     OpenChannelParticipantMuteListRemoveRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(
@@ -1062,7 +1062,7 @@ import {
     OpenChannelParticipantsModerationApi,
     Configuration,
     OpenChannelParticipantMuteListRemoveRequest
-} from 'nexconn-sdk-node';
+} from '@nexconn/server-sdk';
 
 const configuration = new Configuration();
 configuration.setRongCloudCredentials(

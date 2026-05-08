@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { SystemChannelBroadcastAllRequest } from 'nexconn-sdk-node';
+import { SystemChannelBroadcastAllRequest } from '@nexconn/server-sdk';
 
 const instance: SystemChannelBroadcastAllRequest = {
     fromUserId,

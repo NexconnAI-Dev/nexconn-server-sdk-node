@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```typescript
-import { AccessTokenIssueRequest } from 'nexconn-sdk-node';
+import { AccessTokenIssueRequest } from '@nexconn/server-sdk';
 
 const instance: AccessTokenIssueRequest = {
     userId,
