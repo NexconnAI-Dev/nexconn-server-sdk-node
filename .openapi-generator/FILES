@@ -108,6 +108,7 @@ docs/CommunityUserSubchannelListResponse.md
 docs/CommunityUserSubchannelListResponseResult.md
 docs/DirectChannelMessageSendRequest.md
 docs/DirectChannelMessageUpdateRequest.md
+docs/DirectChannelStreamMessageSendRequest.md
 docs/FriendAddRequest.md
 docs/FriendCleanRequest.md
 docs/FriendDeleteRequest.md
@@ -176,6 +177,7 @@ docs/GroupChannelProfileListResponse.md
 docs/GroupChannelProfileListResponseResult.md
 docs/GroupChannelProfileUpdateRequest.md
 docs/GroupChannelQuitRequest.md
+docs/GroupChannelStreamMessageSendRequest.md
 docs/GroupChannelSummaryItem.md
 docs/GroupChannelTransferOwnerRequest.md
 docs/GroupChannelUserMuteListAddRequest.md
@@ -260,6 +262,9 @@ docs/ProfanityWordListResponseResult.md
 docs/ProfanityWordListedItem.md
 docs/SingleMessageIdResponse.md
 docs/SingleMessageIdResponseResult.md
+docs/StreamMessageContent.md
+docs/StreamMessageSendResponse.md
+docs/StreamMessageSendResponseResult.md
 docs/SystemChannelBroadcastAllRequest.md
 docs/SystemChannelBroadcastDeleteRequest.md
 docs/SystemChannelBroadcastOnlineRequest.md
