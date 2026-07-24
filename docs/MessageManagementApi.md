@@ -13,7 +13,9 @@ All requests use the primary/backup domains configured by the caller.
 |[**listCommunityChannelMessageMetadata**](#listcommunitychannelmessagemetadata) | **POST** /v4/community-channel/message/metadata/list | List community-channel message metadata|
 |[**sendCommunityChannelMessage**](#sendcommunitychannelmessage) | **POST** /v4/community-channel/message/send | Send a community channel message|
 |[**sendDirectChannelMessage**](#senddirectchannelmessage) | **POST** /v4/direct-channel/message/send | Send a direct message|
+|[**sendDirectChannelStreamMessage**](#senddirectchannelstreammessage) | **POST** /v4/direct-channel/message/stream/send | Send a direct channel stream message|
 |[**sendGroupChannelMessage**](#sendgroupchannelmessage) | **POST** /v4/group-channel/message/send | Send a group message|
+|[**sendGroupChannelStreamMessage**](#sendgroupchannelstreammessage) | **POST** /v4/group-channel/message/stream/send | Send a group channel stream message|
 |[**sendOpenChannelMessage**](#sendopenchannelmessage) | **POST** /v4/open-channel/message/send | Send an open channel message|
 |[**setChannelTypeMessageMetadata**](#setchanneltypemessagemetadata) | **POST** /v4/channel-type/message/metadata/set | Set message metadata|
 |[**setCommunityChannelMessageMetadata**](#setcommunitychannelmessagemetadata) | **POST** /v4/community-channel/message/metadata/set | Set community-channel message metadata|
@@ -568,6 +570,67 @@ const { status, data } = await apiInstance.sendDirectChannelMessage(
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **sendDirectChannelStreamMessage**
+> StreamMessageSendResponse sendDirectChannelStreamMessage(directChannelStreamMessageSendRequest)
+
+Rate limit: 100/sec.
+
+### Example
+
+```typescript
+import {
+    MessageManagementApi,
+    Configuration,
+    DirectChannelStreamMessageSendRequest
+} from '@nexconn/server-sdk';
+
+const configuration = new Configuration();
+configuration.setRongCloudCredentials(
+    process.env.RONGCLOUD_APP_KEY!,
+    process.env.RONGCLOUD_APP_SECRET!,
+);
+configuration.setPrimaryBackupDomains(
+    process.env.RONGCLOUD_PRIMARY_API_DOMAIN!,
+    process.env.RONGCLOUD_SECONDARY_API_DOMAIN!,
+);
+const apiInstance = new MessageManagementApi(configuration);
+
+let directChannelStreamMessageSendRequest: DirectChannelStreamMessageSendRequest; //
+
+const { status, data } = await apiInstance.sendDirectChannelStreamMessage(
+    directChannelStreamMessageSendRequest
+);
+
+```
+
+### Parameters
+
+|Name | Type | Description  | Notes|
+|------------- | ------------- | ------------- | -------------|
+| **directChannelStreamMessageSendRequest** | **DirectChannelStreamMessageSendRequest**|  | |
+
+
+### Return type
+
+**StreamMessageSendResponse**
+
+### Authorization
+
+[NexconnSignature](../README.md#NexconnSignature)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+|**200** | OK |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **sendGroupChannelMessage**
 > ChannelMessageSendResponse sendGroupChannelMessage(groupChannelMessageSendRequest)
 
@@ -611,6 +674,67 @@ const { status, data } = await apiInstance.sendGroupChannelMessage(
 ### Return type
 
 **ChannelMessageSendResponse**
+
+### Authorization
+
+[NexconnSignature](../README.md#NexconnSignature)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+|**200** | OK |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **sendGroupChannelStreamMessage**
+> StreamMessageSendResponse sendGroupChannelStreamMessage(groupChannelStreamMessageSendRequest)
+
+Rate limit: 100/sec.
+
+### Example
+
+```typescript
+import {
+    MessageManagementApi,
+    Configuration,
+    GroupChannelStreamMessageSendRequest
+} from '@nexconn/server-sdk';
+
+const configuration = new Configuration();
+configuration.setRongCloudCredentials(
+    process.env.RONGCLOUD_APP_KEY!,
+    process.env.RONGCLOUD_APP_SECRET!,
+);
+configuration.setPrimaryBackupDomains(
+    process.env.RONGCLOUD_PRIMARY_API_DOMAIN!,
+    process.env.RONGCLOUD_SECONDARY_API_DOMAIN!,
+);
+const apiInstance = new MessageManagementApi(configuration);
+
+let groupChannelStreamMessageSendRequest: GroupChannelStreamMessageSendRequest; //
+
+const { status, data } = await apiInstance.sendGroupChannelStreamMessage(
+    groupChannelStreamMessageSendRequest
+);
+
+```
+
+### Parameters
+
+|Name | Type | Description  | Notes|
+|------------- | ------------- | ------------- | -------------|
+| **groupChannelStreamMessageSendRequest** | **GroupChannelStreamMessageSendRequest**|  | |
+
+
+### Return type
+
+**StreamMessageSendResponse**
 
 ### Authorization
 
