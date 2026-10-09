@@ -106,7 +106,7 @@ export class Configuration {
         this.baseOptions = {
             ...param.baseOptions,
             headers: {
-                'User-Agent': "@nexconn/server-sdk/0.1.1",
+                'User-Agent': "@nexconn/server-sdk/0.1.2",
                 ...param.baseOptions?.headers,
             },
         };

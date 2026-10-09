@@ -11,10 +11,10 @@ Name | Type | Description | Notes
 **messageId** | **string** | Unique message ID. | [optional] [default to undefined]
 **sentAt** | **number** | Message send timestamp in milliseconds. | [optional] [default to undefined]
 **messageType** | **string** | Message type of the stored message. | [optional] [default to undefined]
-**channelType** | **number** | Channel type of the stored message. | [optional] [default to undefined]
 **content** | **string** | Raw message content payload as stored by the service. | [optional] [default to undefined]
 **hasMetadata** | **boolean** | Whether the message has metadata entries attached. | [optional] [default to undefined]
-**metadata** | [**Array&lt;MessageMetadataListItem&gt;**](MessageMetadataListItem.md) | List of metadata entries (&#x60;CommunityHistoryMessage&#x60; uses &#x60;List&lt;MetadataItem&gt;&#x60;, not a map). | [optional] [default to undefined]
+**metadata** | [**Array&lt;MessageMetadataListItem&gt;**](MessageMetadataListItem.md) | Structured message metadata entries. Omitted when the original metadata is empty or cannot be parsed. | [optional] [default to undefined]
+**quote** | **string** | Quoted message details as a JSON string containing msgUID, objectName and fromUserId. Omitted for messages without a quote. | [optional] [default to undefined]
 
 ## Example
 
@@ -28,10 +28,10 @@ const instance: MessageRecord = {
     messageId,
     sentAt,
     messageType,
-    channelType,
     content,
     hasMetadata,
     metadata,
+    quote,
 };
 ```
 

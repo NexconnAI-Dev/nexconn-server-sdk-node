@@ -1080,41 +1080,47 @@ export interface CommunityChannelFreezeListSetRequest {
  */
 export interface CommunityChannelHistoryMessageListRequest {
     /**
-     * 
+     * Community channel ID.
      * @type {string}
      * @memberof CommunityChannelHistoryMessageListRequest
      */
     'channelId': string;
     /**
-     * 
+     * Optional community subchannel ID. When omitted, messages from the whole community channel are queried.
      * @type {string}
      * @memberof CommunityChannelHistoryMessageListRequest
      */
-    'subchannelId': string;
+    'subchannelId'?: string;
     /**
-     * 
+     * User ID of the community-channel participant.
+     * @type {string}
+     * @memberof CommunityChannelHistoryMessageListRequest
+     */
+    'userId': string;
+    /**
+     * Query start timestamp in Unix milliseconds. Must be greater than or equal to `endAt`; the range cannot exceed 14 days.
      * @type {number}
      * @memberof CommunityChannelHistoryMessageListRequest
      */
     'startAt': number;
     /**
-     * 
+     * Query end timestamp in Unix milliseconds. Messages are returned in descending timestamp order.
      * @type {number}
      * @memberof CommunityChannelHistoryMessageListRequest
      */
     'endAt': number;
     /**
-     * 
-     * @type {string}
-     * @memberof CommunityChannelHistoryMessageListRequest
-     */
-    'fromUserId'?: string;
-    /**
-     * 
+     * Number of messages to return. Must be between 1 and 100.
      * @type {number}
      * @memberof CommunityChannelHistoryMessageListRequest
      */
     'pageSize'?: number;
+    /**
+     * Whether to include the message at `startAt` when it matches the query boundary.
+     * @type {boolean}
+     * @memberof CommunityChannelHistoryMessageListRequest
+     */
+    'includeStart': boolean;
 }
 /**
  * 
@@ -2247,6 +2253,49 @@ export interface CommunityUserSubchannelListResponseResult {
 /**
  * 
  * @export
+ * @interface DirectChannelHistoryMessageListRequest
+ */
+export interface DirectChannelHistoryMessageListRequest {
+    /**
+     * User ID of the direct-channel participant.
+     * @type {string}
+     * @memberof DirectChannelHistoryMessageListRequest
+     */
+    'userId': string;
+    /**
+     * Direct channel ID.
+     * @type {string}
+     * @memberof DirectChannelHistoryMessageListRequest
+     */
+    'channelId': string;
+    /**
+     * Query start timestamp in Unix milliseconds. Must be greater than or equal to `endAt`; the range cannot exceed 14 days.
+     * @type {number}
+     * @memberof DirectChannelHistoryMessageListRequest
+     */
+    'startAt': number;
+    /**
+     * Query end timestamp in Unix milliseconds. Messages are returned in descending timestamp order.
+     * @type {number}
+     * @memberof DirectChannelHistoryMessageListRequest
+     */
+    'endAt': number;
+    /**
+     * Number of messages to return. Must be between 1 and 100.
+     * @type {number}
+     * @memberof DirectChannelHistoryMessageListRequest
+     */
+    'pageSize'?: number;
+    /**
+     * Whether to include the message at `startAt` when it matches the query boundary.
+     * @type {boolean}
+     * @memberof DirectChannelHistoryMessageListRequest
+     */
+    'includeStart': boolean;
+}
+/**
+ * 
+ * @export
  * @interface DirectChannelMessageSendRequest
  */
 export interface DirectChannelMessageSendRequest {
@@ -2438,6 +2487,105 @@ export interface DirectChannelStreamMessageSendRequest {
      * @memberof DirectChannelStreamMessageSendRequest
      */
     'disableUpdateLastMsg'?: boolean;
+}
+/**
+ * 
+ * @export
+ * @interface DirectGroupHistoryMessageRecord
+ */
+export interface DirectGroupHistoryMessageRecord {
+    /**
+     * Channel identifier of the stored message.
+     * @type {string}
+     * @memberof DirectGroupHistoryMessageRecord
+     */
+    'channelId'?: string;
+    /**
+     * Sender user ID of the stored message.
+     * @type {string}
+     * @memberof DirectGroupHistoryMessageRecord
+     */
+    'fromUserId'?: string;
+    /**
+     * Unique message ID.
+     * @type {string}
+     * @memberof DirectGroupHistoryMessageRecord
+     */
+    'messageId'?: string;
+    /**
+     * Message send timestamp in milliseconds.
+     * @type {number}
+     * @memberof DirectGroupHistoryMessageRecord
+     */
+    'sentAt'?: number;
+    /**
+     * Message type of the stored message.
+     * @type {string}
+     * @memberof DirectGroupHistoryMessageRecord
+     */
+    'messageType'?: string;
+    /**
+     * Raw message content payload as stored by the service.
+     * @type {string}
+     * @memberof DirectGroupHistoryMessageRecord
+     */
+    'content'?: string;
+    /**
+     * Whether the message has metadata entries attached.
+     * @type {boolean}
+     * @memberof DirectGroupHistoryMessageRecord
+     */
+    'hasMetadata'?: boolean;
+    /**
+     * Structured message metadata entries. Omitted when the original metadata is empty or cannot be parsed.
+     * @type {Array<MessageMetadataListItem>}
+     * @memberof DirectGroupHistoryMessageRecord
+     */
+    'metadata'?: Array<MessageMetadataListItem>;
+    /**
+     * Whether the message was AI-generated. Returned only for direct and group channels when the application has enabled this capability.
+     * @type {boolean}
+     * @memberof DirectGroupHistoryMessageRecord
+     */
+    'aiGenerated'?: boolean;
+    /**
+     * Quoted message details as a JSON string containing msgUID, objectName and fromUserId. Omitted for messages without a quote.
+     * @type {string}
+     * @memberof DirectGroupHistoryMessageRecord
+     */
+    'quote'?: string;
+}
+/**
+ * 
+ * @export
+ * @interface DirectGroupHistoryMessageResponse
+ */
+export interface DirectGroupHistoryMessageResponse {
+    /**
+     * 
+     * @type {number}
+     * @memberof DirectGroupHistoryMessageResponse
+     */
+    'code': number;
+    /**
+     * 
+     * @type {DirectGroupHistoryMessageResult}
+     * @memberof DirectGroupHistoryMessageResponse
+     */
+    'result'?: DirectGroupHistoryMessageResult;
+}
+/**
+ * 
+ * @export
+ * @interface DirectGroupHistoryMessageResult
+ */
+export interface DirectGroupHistoryMessageResult {
+    /**
+     * 
+     * @type {Array<DirectGroupHistoryMessageRecord>}
+     * @memberof DirectGroupHistoryMessageResult
+     */
+    'messages'?: Array<DirectGroupHistoryMessageRecord>;
 }
 /**
  * 
@@ -3126,6 +3274,49 @@ export interface GroupChannelFreezeStatusItem {
      * @memberof GroupChannelFreezeStatusItem
      */
     'status'?: number;
+}
+/**
+ * 
+ * @export
+ * @interface GroupChannelHistoryMessageListRequest
+ */
+export interface GroupChannelHistoryMessageListRequest {
+    /**
+     * User ID of the group-channel participant.
+     * @type {string}
+     * @memberof GroupChannelHistoryMessageListRequest
+     */
+    'userId': string;
+    /**
+     * Group channel ID.
+     * @type {string}
+     * @memberof GroupChannelHistoryMessageListRequest
+     */
+    'channelId': string;
+    /**
+     * Query start timestamp in Unix milliseconds. Must be greater than or equal to `endAt`; the range cannot exceed 14 days.
+     * @type {number}
+     * @memberof GroupChannelHistoryMessageListRequest
+     */
+    'startAt': number;
+    /**
+     * Query end timestamp in Unix milliseconds. Messages are returned in descending timestamp order.
+     * @type {number}
+     * @memberof GroupChannelHistoryMessageListRequest
+     */
+    'endAt': number;
+    /**
+     * Number of messages to return. Must be between 1 and 100.
+     * @type {number}
+     * @memberof GroupChannelHistoryMessageListRequest
+     */
+    'pageSize'?: number;
+    /**
+     * Whether to include the message at `startAt` when it matches the query boundary.
+     * @type {boolean}
+     * @memberof GroupChannelHistoryMessageListRequest
+     */
+    'includeStart': boolean;
 }
 /**
  * 
@@ -4493,12 +4684,6 @@ export interface MessageRecord {
      */
     'messageType'?: string;
     /**
-     * Channel type of the stored message.
-     * @type {number}
-     * @memberof MessageRecord
-     */
-    'channelType'?: number;
-    /**
      * Raw message content payload as stored by the service.
      * @type {string}
      * @memberof MessageRecord
@@ -4511,11 +4696,17 @@ export interface MessageRecord {
      */
     'hasMetadata'?: boolean;
     /**
-     * List of metadata entries (`CommunityHistoryMessage` uses `List<MetadataItem>`, not a map).
+     * Structured message metadata entries. Omitted when the original metadata is empty or cannot be parsed.
      * @type {Array<MessageMetadataListItem>}
      * @memberof MessageRecord
      */
     'metadata'?: Array<MessageMetadataListItem>;
+    /**
+     * Quoted message details as a JSON string containing msgUID, objectName and fromUserId. Omitted for messages without a quote.
+     * @type {string}
+     * @memberof MessageRecord
+     */
+    'quote'?: string;
 }
 /**
  * 
@@ -4987,6 +5178,130 @@ export interface OpenChannelGlobalMuteListRemoveRequest {
      * @memberof OpenChannelGlobalMuteListRemoveRequest
      */
     'needNotify'?: boolean;
+}
+/**
+ * 
+ * @export
+ * @interface OpenChannelHistoryMessageListRequest
+ */
+export interface OpenChannelHistoryMessageListRequest {
+    /**
+     * User ID of the open-channel participant.
+     * @type {string}
+     * @memberof OpenChannelHistoryMessageListRequest
+     */
+    'userId': string;
+    /**
+     * Open channel ID.
+     * @type {string}
+     * @memberof OpenChannelHistoryMessageListRequest
+     */
+    'channelId': string;
+    /**
+     * Query start timestamp in Unix milliseconds. Must be greater than or equal to `endAt`; the range cannot exceed 14 days.
+     * @type {number}
+     * @memberof OpenChannelHistoryMessageListRequest
+     */
+    'startAt': number;
+    /**
+     * Query end timestamp in Unix milliseconds. Messages are returned in descending timestamp order.
+     * @type {number}
+     * @memberof OpenChannelHistoryMessageListRequest
+     */
+    'endAt': number;
+    /**
+     * Number of messages to return. Must be between 1 and 100.
+     * @type {number}
+     * @memberof OpenChannelHistoryMessageListRequest
+     */
+    'pageSize'?: number;
+    /**
+     * Whether to include the message at `startAt` when it matches the query boundary.
+     * @type {boolean}
+     * @memberof OpenChannelHistoryMessageListRequest
+     */
+    'includeStart': boolean;
+}
+/**
+ * 
+ * @export
+ * @interface OpenChannelHistoryMessageRecord
+ */
+export interface OpenChannelHistoryMessageRecord {
+    /**
+     * Channel identifier of the stored message.
+     * @type {string}
+     * @memberof OpenChannelHistoryMessageRecord
+     */
+    'channelId'?: string;
+    /**
+     * Sender user ID of the stored message.
+     * @type {string}
+     * @memberof OpenChannelHistoryMessageRecord
+     */
+    'fromUserId'?: string;
+    /**
+     * Unique message ID.
+     * @type {string}
+     * @memberof OpenChannelHistoryMessageRecord
+     */
+    'messageId'?: string;
+    /**
+     * Message send timestamp in milliseconds.
+     * @type {number}
+     * @memberof OpenChannelHistoryMessageRecord
+     */
+    'sentAt'?: number;
+    /**
+     * Message type of the stored message.
+     * @type {string}
+     * @memberof OpenChannelHistoryMessageRecord
+     */
+    'messageType'?: string;
+    /**
+     * Raw message content payload as stored by the service.
+     * @type {string}
+     * @memberof OpenChannelHistoryMessageRecord
+     */
+    'content'?: string;
+    /**
+     * Quoted message details as a JSON string containing msgUID, objectName and fromUserId. Omitted for messages without a quote.
+     * @type {string}
+     * @memberof OpenChannelHistoryMessageRecord
+     */
+    'quote'?: string;
+}
+/**
+ * 
+ * @export
+ * @interface OpenChannelHistoryMessageResponse
+ */
+export interface OpenChannelHistoryMessageResponse {
+    /**
+     * 
+     * @type {number}
+     * @memberof OpenChannelHistoryMessageResponse
+     */
+    'code': number;
+    /**
+     * 
+     * @type {OpenChannelHistoryMessageResult}
+     * @memberof OpenChannelHistoryMessageResponse
+     */
+    'result'?: OpenChannelHistoryMessageResult;
+}
+/**
+ * 
+ * @export
+ * @interface OpenChannelHistoryMessageResult
+ */
+export interface OpenChannelHistoryMessageResult {
+    /**
+     * 
+     * @type {Array<OpenChannelHistoryMessageRecord>}
+     * @memberof OpenChannelHistoryMessageResult
+     */
+    'messages'?: Array<OpenChannelHistoryMessageRecord>;
 }
 /**
  * 
@@ -8684,49 +8999,6 @@ export const CommunityChannelManagementApiAxiosParamCreator = function (configur
         },
         /**
          * 
-         * @summary List community-channel history messages
-         * @param {CommunityChannelHistoryMessageListRequest} communityChannelHistoryMessageListRequest 
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        listCommunityChannelHistoryMessages: async (communityChannelHistoryMessageListRequest: CommunityChannelHistoryMessageListRequest, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
-    
-            // verify required parameter 'communityChannelHistoryMessageListRequest' is not null or undefined
-            assertParamExists('listCommunityChannelHistoryMessages', 'communityChannelHistoryMessageListRequest', communityChannelHistoryMessageListRequest)
-    
-            const localVarPath = `/v4/community-channel/history-message/list`;
-            // use dummy base URL string because the URL constructor only accepts absolute URLs.
-            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
-            let baseOptions;
-            if (configuration) {
-                baseOptions = configuration.baseOptions;
-            }
-
-            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
-            const localVarHeaderParameter = {} as any;
-            const localVarQueryParameter = {} as any;
-
-            // authentication NexconnSignature required
-            await setApiKeyToObject(localVarHeaderParameter, "App-Key", configuration)
-
-
-    
-            localVarHeaderParameter['Content-Type'] = 'application/json';
-
-            setSearchParams(localVarUrlObj, localVarQueryParameter);
-            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
-            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-
-            localVarRequestOptions.data = serializeDataIfNeeded(communityChannelHistoryMessageListRequest, localVarRequestOptions, configuration)
-    
-
-            return {
-                url: toPathString(localVarUrlObj),
-                options: localVarRequestOptions,
-            };
-        },
-        /**
-         * 
          * @summary List community channel subchannel user groups
          * @param {CommunityChannelSubchannelUserGroupListRequest} communityChannelSubchannelUserGroupListRequest 
          * @param {*} [options] Override http request option.
@@ -9469,19 +9741,6 @@ export const CommunityChannelManagementApiFp = function(configuration?: Configur
         },
         /**
          * 
-         * @summary List community-channel history messages
-         * @param {CommunityChannelHistoryMessageListRequest} communityChannelHistoryMessageListRequest 
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        async listCommunityChannelHistoryMessages(communityChannelHistoryMessageListRequest: CommunityChannelHistoryMessageListRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<MessageHistoryResponse>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.listCommunityChannelHistoryMessages(communityChannelHistoryMessageListRequest, options);
-            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['CommunityChannelManagementApi.listCommunityChannelHistoryMessages']?.[localVarOperationServerIndex]?.url;
-            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
-        },
-        /**
-         * 
          * @summary List community channel subchannel user groups
          * @param {CommunityChannelSubchannelUserGroupListRequest} communityChannelSubchannelUserGroupListRequest 
          * @param {*} [options] Override http request option.
@@ -9774,16 +10033,6 @@ export const CommunityChannelManagementApiFactory = function (configuration?: Co
         },
         /**
          * 
-         * @summary List community-channel history messages
-         * @param {CommunityChannelHistoryMessageListRequest} communityChannelHistoryMessageListRequest 
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        listCommunityChannelHistoryMessages(communityChannelHistoryMessageListRequest: CommunityChannelHistoryMessageListRequest, options?: RawAxiosRequestConfig): AxiosPromise<MessageHistoryResponse> {
-            return localVarFp.listCommunityChannelHistoryMessages(communityChannelHistoryMessageListRequest, options).then((request) => request(axios, basePath));
-        },
-        /**
-         * 
          * @summary List community channel subchannel user groups
          * @param {CommunityChannelSubchannelUserGroupListRequest} communityChannelSubchannelUserGroupListRequest 
          * @param {*} [options] Override http request option.
@@ -10030,16 +10279,6 @@ export interface CommunityChannelManagementApiInterface {
      * @memberof CommunityChannelManagementApiInterface
      */
     joinCommunityChannel(communityChannelMemberRequest: CommunityChannelMemberRequest, options?: RawAxiosRequestConfig): AxiosPromise<CodeOnlyResponse>;
-
-    /**
-     * 
-     * @summary List community-channel history messages
-     * @param {CommunityChannelHistoryMessageListRequest} communityChannelHistoryMessageListRequest 
-     * @param {*} [options] Override http request option.
-     * @throws {RequiredError}
-     * @memberof CommunityChannelManagementApiInterface
-     */
-    listCommunityChannelHistoryMessages(communityChannelHistoryMessageListRequest: CommunityChannelHistoryMessageListRequest, options?: RawAxiosRequestConfig): AxiosPromise<MessageHistoryResponse>;
 
     /**
      * 
@@ -10308,18 +10547,6 @@ export class CommunityChannelManagementApi extends BaseAPI implements CommunityC
      */
     public joinCommunityChannel(communityChannelMemberRequest: CommunityChannelMemberRequest, options?: RawAxiosRequestConfig) {
         return CommunityChannelManagementApiFp(this.configuration).joinCommunityChannel(communityChannelMemberRequest, options).then((request) => request(this.axios, this.basePath));
-    }
-
-    /**
-     * 
-     * @summary List community-channel history messages
-     * @param {CommunityChannelHistoryMessageListRequest} communityChannelHistoryMessageListRequest 
-     * @param {*} [options] Override http request option.
-     * @throws {RequiredError}
-     * @memberof CommunityChannelManagementApi
-     */
-    public listCommunityChannelHistoryMessages(communityChannelHistoryMessageListRequest: CommunityChannelHistoryMessageListRequest, options?: RawAxiosRequestConfig) {
-        return CommunityChannelManagementApiFp(this.configuration).listCommunityChannelHistoryMessages(communityChannelHistoryMessageListRequest, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -14994,6 +15221,49 @@ export const MessageManagementApiAxiosParamCreator = function (configuration?: C
             };
         },
         /**
+         * Rate limit: 10/sec. Query range is at most 14 days; messages are returned in descending timestamp order.
+         * @summary List community-channel history messages
+         * @param {CommunityChannelHistoryMessageListRequest} communityChannelHistoryMessageListRequest 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        listCommunityChannelHistoryMessages: async (communityChannelHistoryMessageListRequest: CommunityChannelHistoryMessageListRequest, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+    
+            // verify required parameter 'communityChannelHistoryMessageListRequest' is not null or undefined
+            assertParamExists('listCommunityChannelHistoryMessages', 'communityChannelHistoryMessageListRequest', communityChannelHistoryMessageListRequest)
+    
+            const localVarPath = `/v4/community-channel/history-message/list`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication NexconnSignature required
+            await setApiKeyToObject(localVarHeaderParameter, "App-Key", configuration)
+
+
+    
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            localVarRequestOptions.data = serializeDataIfNeeded(communityChannelHistoryMessageListRequest, localVarRequestOptions, configuration)
+    
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
          * 
          * @summary List community-channel message metadata
          * @param {CommunityChannelMessageMetadataListRequest} communityChannelMessageMetadataListRequest 
@@ -15029,6 +15299,135 @@ export const MessageManagementApiAxiosParamCreator = function (configuration?: C
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
             localVarRequestOptions.data = serializeDataIfNeeded(communityChannelMessageMetadataListRequest, localVarRequestOptions, configuration)
+    
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * Rate limit: 10/sec. Query range is at most 14 days; messages are returned in descending timestamp order.
+         * @summary List direct-channel history messages
+         * @param {DirectChannelHistoryMessageListRequest} directChannelHistoryMessageListRequest 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        listDirectChannelHistoryMessages: async (directChannelHistoryMessageListRequest: DirectChannelHistoryMessageListRequest, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+    
+            // verify required parameter 'directChannelHistoryMessageListRequest' is not null or undefined
+            assertParamExists('listDirectChannelHistoryMessages', 'directChannelHistoryMessageListRequest', directChannelHistoryMessageListRequest)
+    
+            const localVarPath = `/v4/direct-channel/history-message/list`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication NexconnSignature required
+            await setApiKeyToObject(localVarHeaderParameter, "App-Key", configuration)
+
+
+    
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            localVarRequestOptions.data = serializeDataIfNeeded(directChannelHistoryMessageListRequest, localVarRequestOptions, configuration)
+    
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * Rate limit: 10/sec. Query range is at most 14 days; messages are returned in descending timestamp order.
+         * @summary List group-channel history messages
+         * @param {GroupChannelHistoryMessageListRequest} groupChannelHistoryMessageListRequest 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        listGroupChannelHistoryMessages: async (groupChannelHistoryMessageListRequest: GroupChannelHistoryMessageListRequest, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+    
+            // verify required parameter 'groupChannelHistoryMessageListRequest' is not null or undefined
+            assertParamExists('listGroupChannelHistoryMessages', 'groupChannelHistoryMessageListRequest', groupChannelHistoryMessageListRequest)
+    
+            const localVarPath = `/v4/group-channel/history-message/list`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication NexconnSignature required
+            await setApiKeyToObject(localVarHeaderParameter, "App-Key", configuration)
+
+
+    
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            localVarRequestOptions.data = serializeDataIfNeeded(groupChannelHistoryMessageListRequest, localVarRequestOptions, configuration)
+    
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * Rate limit: 10/sec. Query range is at most 14 days; messages are returned in descending timestamp order.
+         * @summary List open-channel history messages
+         * @param {OpenChannelHistoryMessageListRequest} openChannelHistoryMessageListRequest 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        listOpenChannelHistoryMessages: async (openChannelHistoryMessageListRequest: OpenChannelHistoryMessageListRequest, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+    
+            // verify required parameter 'openChannelHistoryMessageListRequest' is not null or undefined
+            assertParamExists('listOpenChannelHistoryMessages', 'openChannelHistoryMessageListRequest', openChannelHistoryMessageListRequest)
+    
+            const localVarPath = `/v4/open-channel/history-message/list`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication NexconnSignature required
+            await setApiKeyToObject(localVarHeaderParameter, "App-Key", configuration)
+
+
+    
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            localVarRequestOptions.data = serializeDataIfNeeded(openChannelHistoryMessageListRequest, localVarRequestOptions, configuration)
     
 
             return {
@@ -15598,6 +15997,19 @@ export const MessageManagementApiFp = function(configuration?: Configuration) {
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
+         * Rate limit: 10/sec. Query range is at most 14 days; messages are returned in descending timestamp order.
+         * @summary List community-channel history messages
+         * @param {CommunityChannelHistoryMessageListRequest} communityChannelHistoryMessageListRequest 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async listCommunityChannelHistoryMessages(communityChannelHistoryMessageListRequest: CommunityChannelHistoryMessageListRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<MessageHistoryResponse>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.listCommunityChannelHistoryMessages(communityChannelHistoryMessageListRequest, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['MessageManagementApi.listCommunityChannelHistoryMessages']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
          * 
          * @summary List community-channel message metadata
          * @param {CommunityChannelMessageMetadataListRequest} communityChannelMessageMetadataListRequest 
@@ -15608,6 +16020,45 @@ export const MessageManagementApiFp = function(configuration?: Configuration) {
             const localVarAxiosArgs = await localVarAxiosParamCreator.listCommunityChannelMessageMetadata(communityChannelMessageMetadataListRequest, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['MessageManagementApi.listCommunityChannelMessageMetadata']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * Rate limit: 10/sec. Query range is at most 14 days; messages are returned in descending timestamp order.
+         * @summary List direct-channel history messages
+         * @param {DirectChannelHistoryMessageListRequest} directChannelHistoryMessageListRequest 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async listDirectChannelHistoryMessages(directChannelHistoryMessageListRequest: DirectChannelHistoryMessageListRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<DirectGroupHistoryMessageResponse>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.listDirectChannelHistoryMessages(directChannelHistoryMessageListRequest, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['MessageManagementApi.listDirectChannelHistoryMessages']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * Rate limit: 10/sec. Query range is at most 14 days; messages are returned in descending timestamp order.
+         * @summary List group-channel history messages
+         * @param {GroupChannelHistoryMessageListRequest} groupChannelHistoryMessageListRequest 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async listGroupChannelHistoryMessages(groupChannelHistoryMessageListRequest: GroupChannelHistoryMessageListRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<DirectGroupHistoryMessageResponse>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.listGroupChannelHistoryMessages(groupChannelHistoryMessageListRequest, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['MessageManagementApi.listGroupChannelHistoryMessages']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * Rate limit: 10/sec. Query range is at most 14 days; messages are returned in descending timestamp order.
+         * @summary List open-channel history messages
+         * @param {OpenChannelHistoryMessageListRequest} openChannelHistoryMessageListRequest 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async listOpenChannelHistoryMessages(openChannelHistoryMessageListRequest: OpenChannelHistoryMessageListRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<OpenChannelHistoryMessageResponse>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.listOpenChannelHistoryMessages(openChannelHistoryMessageListRequest, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['MessageManagementApi.listOpenChannelHistoryMessages']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
@@ -15824,6 +16275,16 @@ export const MessageManagementApiFactory = function (configuration?: Configurati
             return localVarFp.listChannelTypeMessageMetadata(channelTypeMessageMetadataListRequest, options).then((request) => request(axios, basePath));
         },
         /**
+         * Rate limit: 10/sec. Query range is at most 14 days; messages are returned in descending timestamp order.
+         * @summary List community-channel history messages
+         * @param {CommunityChannelHistoryMessageListRequest} communityChannelHistoryMessageListRequest 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        listCommunityChannelHistoryMessages(communityChannelHistoryMessageListRequest: CommunityChannelHistoryMessageListRequest, options?: RawAxiosRequestConfig): AxiosPromise<MessageHistoryResponse> {
+            return localVarFp.listCommunityChannelHistoryMessages(communityChannelHistoryMessageListRequest, options).then((request) => request(axios, basePath));
+        },
+        /**
          * 
          * @summary List community-channel message metadata
          * @param {CommunityChannelMessageMetadataListRequest} communityChannelMessageMetadataListRequest 
@@ -15832,6 +16293,36 @@ export const MessageManagementApiFactory = function (configuration?: Configurati
          */
         listCommunityChannelMessageMetadata(communityChannelMessageMetadataListRequest: CommunityChannelMessageMetadataListRequest, options?: RawAxiosRequestConfig): AxiosPromise<CommunityChannelMessageMetadataListResponse> {
             return localVarFp.listCommunityChannelMessageMetadata(communityChannelMessageMetadataListRequest, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * Rate limit: 10/sec. Query range is at most 14 days; messages are returned in descending timestamp order.
+         * @summary List direct-channel history messages
+         * @param {DirectChannelHistoryMessageListRequest} directChannelHistoryMessageListRequest 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        listDirectChannelHistoryMessages(directChannelHistoryMessageListRequest: DirectChannelHistoryMessageListRequest, options?: RawAxiosRequestConfig): AxiosPromise<DirectGroupHistoryMessageResponse> {
+            return localVarFp.listDirectChannelHistoryMessages(directChannelHistoryMessageListRequest, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * Rate limit: 10/sec. Query range is at most 14 days; messages are returned in descending timestamp order.
+         * @summary List group-channel history messages
+         * @param {GroupChannelHistoryMessageListRequest} groupChannelHistoryMessageListRequest 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        listGroupChannelHistoryMessages(groupChannelHistoryMessageListRequest: GroupChannelHistoryMessageListRequest, options?: RawAxiosRequestConfig): AxiosPromise<DirectGroupHistoryMessageResponse> {
+            return localVarFp.listGroupChannelHistoryMessages(groupChannelHistoryMessageListRequest, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * Rate limit: 10/sec. Query range is at most 14 days; messages are returned in descending timestamp order.
+         * @summary List open-channel history messages
+         * @param {OpenChannelHistoryMessageListRequest} openChannelHistoryMessageListRequest 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        listOpenChannelHistoryMessages(openChannelHistoryMessageListRequest: OpenChannelHistoryMessageListRequest, options?: RawAxiosRequestConfig): AxiosPromise<OpenChannelHistoryMessageResponse> {
+            return localVarFp.listOpenChannelHistoryMessages(openChannelHistoryMessageListRequest, options).then((request) => request(axios, basePath));
         },
         /**
          * Rate limit: 100/sec (by target group count); 20/sec per channel.
@@ -16013,6 +16504,16 @@ export interface MessageManagementApiInterface {
     listChannelTypeMessageMetadata(channelTypeMessageMetadataListRequest: ChannelTypeMessageMetadataListRequest, options?: RawAxiosRequestConfig): AxiosPromise<ChannelTypeMessageMetadataListResponse>;
 
     /**
+     * Rate limit: 10/sec. Query range is at most 14 days; messages are returned in descending timestamp order.
+     * @summary List community-channel history messages
+     * @param {CommunityChannelHistoryMessageListRequest} communityChannelHistoryMessageListRequest 
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof MessageManagementApiInterface
+     */
+    listCommunityChannelHistoryMessages(communityChannelHistoryMessageListRequest: CommunityChannelHistoryMessageListRequest, options?: RawAxiosRequestConfig): AxiosPromise<MessageHistoryResponse>;
+
+    /**
      * 
      * @summary List community-channel message metadata
      * @param {CommunityChannelMessageMetadataListRequest} communityChannelMessageMetadataListRequest 
@@ -16021,6 +16522,36 @@ export interface MessageManagementApiInterface {
      * @memberof MessageManagementApiInterface
      */
     listCommunityChannelMessageMetadata(communityChannelMessageMetadataListRequest: CommunityChannelMessageMetadataListRequest, options?: RawAxiosRequestConfig): AxiosPromise<CommunityChannelMessageMetadataListResponse>;
+
+    /**
+     * Rate limit: 10/sec. Query range is at most 14 days; messages are returned in descending timestamp order.
+     * @summary List direct-channel history messages
+     * @param {DirectChannelHistoryMessageListRequest} directChannelHistoryMessageListRequest 
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof MessageManagementApiInterface
+     */
+    listDirectChannelHistoryMessages(directChannelHistoryMessageListRequest: DirectChannelHistoryMessageListRequest, options?: RawAxiosRequestConfig): AxiosPromise<DirectGroupHistoryMessageResponse>;
+
+    /**
+     * Rate limit: 10/sec. Query range is at most 14 days; messages are returned in descending timestamp order.
+     * @summary List group-channel history messages
+     * @param {GroupChannelHistoryMessageListRequest} groupChannelHistoryMessageListRequest 
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof MessageManagementApiInterface
+     */
+    listGroupChannelHistoryMessages(groupChannelHistoryMessageListRequest: GroupChannelHistoryMessageListRequest, options?: RawAxiosRequestConfig): AxiosPromise<DirectGroupHistoryMessageResponse>;
+
+    /**
+     * Rate limit: 10/sec. Query range is at most 14 days; messages are returned in descending timestamp order.
+     * @summary List open-channel history messages
+     * @param {OpenChannelHistoryMessageListRequest} openChannelHistoryMessageListRequest 
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof MessageManagementApiInterface
+     */
+    listOpenChannelHistoryMessages(openChannelHistoryMessageListRequest: OpenChannelHistoryMessageListRequest, options?: RawAxiosRequestConfig): AxiosPromise<OpenChannelHistoryMessageResponse>;
 
     /**
      * Rate limit: 100/sec (by target group count); 20/sec per channel.
@@ -16214,6 +16745,18 @@ export class MessageManagementApi extends BaseAPI implements MessageManagementAp
     }
 
     /**
+     * Rate limit: 10/sec. Query range is at most 14 days; messages are returned in descending timestamp order.
+     * @summary List community-channel history messages
+     * @param {CommunityChannelHistoryMessageListRequest} communityChannelHistoryMessageListRequest 
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof MessageManagementApi
+     */
+    public listCommunityChannelHistoryMessages(communityChannelHistoryMessageListRequest: CommunityChannelHistoryMessageListRequest, options?: RawAxiosRequestConfig) {
+        return MessageManagementApiFp(this.configuration).listCommunityChannelHistoryMessages(communityChannelHistoryMessageListRequest, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
      * 
      * @summary List community-channel message metadata
      * @param {CommunityChannelMessageMetadataListRequest} communityChannelMessageMetadataListRequest 
@@ -16223,6 +16766,42 @@ export class MessageManagementApi extends BaseAPI implements MessageManagementAp
      */
     public listCommunityChannelMessageMetadata(communityChannelMessageMetadataListRequest: CommunityChannelMessageMetadataListRequest, options?: RawAxiosRequestConfig) {
         return MessageManagementApiFp(this.configuration).listCommunityChannelMessageMetadata(communityChannelMessageMetadataListRequest, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * Rate limit: 10/sec. Query range is at most 14 days; messages are returned in descending timestamp order.
+     * @summary List direct-channel history messages
+     * @param {DirectChannelHistoryMessageListRequest} directChannelHistoryMessageListRequest 
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof MessageManagementApi
+     */
+    public listDirectChannelHistoryMessages(directChannelHistoryMessageListRequest: DirectChannelHistoryMessageListRequest, options?: RawAxiosRequestConfig) {
+        return MessageManagementApiFp(this.configuration).listDirectChannelHistoryMessages(directChannelHistoryMessageListRequest, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * Rate limit: 10/sec. Query range is at most 14 days; messages are returned in descending timestamp order.
+     * @summary List group-channel history messages
+     * @param {GroupChannelHistoryMessageListRequest} groupChannelHistoryMessageListRequest 
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof MessageManagementApi
+     */
+    public listGroupChannelHistoryMessages(groupChannelHistoryMessageListRequest: GroupChannelHistoryMessageListRequest, options?: RawAxiosRequestConfig) {
+        return MessageManagementApiFp(this.configuration).listGroupChannelHistoryMessages(groupChannelHistoryMessageListRequest, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * Rate limit: 10/sec. Query range is at most 14 days; messages are returned in descending timestamp order.
+     * @summary List open-channel history messages
+     * @param {OpenChannelHistoryMessageListRequest} openChannelHistoryMessageListRequest 
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof MessageManagementApi
+     */
+    public listOpenChannelHistoryMessages(openChannelHistoryMessageListRequest: OpenChannelHistoryMessageListRequest, options?: RawAxiosRequestConfig) {
+        return MessageManagementApiFp(this.configuration).listOpenChannelHistoryMessages(openChannelHistoryMessageListRequest, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**

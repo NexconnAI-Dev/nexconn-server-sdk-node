@@ -2,8 +2,8 @@
 
 OpenAPI specification aligned with the current Nexconn public documentation, PDF source documents, and generated SDK requirements.
 
-- API version: 0.1.1
-- Package version: 0.1.1
+- API version: 0.1.2
+- Package version: 0.1.2
 - Generator version: 7.14.0
 
 ## Requirements
@@ -14,7 +14,7 @@ OpenAPI specification aligned with the current Nexconn public documentation, PDF
 ## Installation
 
 ```sh
-npm install "git+https://github.com/NexconnAI-Dev/nexconn-server-sdk-node.git#v0.1.1"
+npm install "git+https://github.com/NexconnAI-Dev/nexconn-server-sdk-node.git#v0.1.2"
 ```
 
 If you publish releases later, prefer installing a tagged version instead of tracking a branch.
@@ -127,7 +127,7 @@ All exception subclasses provide the following properties:
 
 - Automatic Nexconn request signing when `setNexconnCredentials()` is configured
 - Built-in multi-domain failover support via `setPrimaryBackupDomains()`
-- Default `User-Agent`: `@nexconn/server-sdk/0.1.1`
+- Default `User-Agent`: `@nexconn/server-sdk/0.1.2`
 - Automatic `X-Request-ID` generation
 
 ## Configuration of Server URL
@@ -162,7 +162,6 @@ Class | Method | HTTP request | Description
 *CommunityChannelManagementApi* | [**deleteCommunitySubchannel**](docs/CommunityChannelManagementApi.md#deletecommunitysubchannel) | **POST** /v4/community-channel/subchannel/delete | Delete community subchannel
 *CommunityChannelManagementApi* | [**dismissCommunityChannel**](docs/CommunityChannelManagementApi.md#dismisscommunitychannel) | **POST** /v4/community-channel/dismiss | Dismiss community channel
 *CommunityChannelManagementApi* | [**joinCommunityChannel**](docs/CommunityChannelManagementApi.md#joincommunitychannel) | **POST** /v4/community-channel/join | Join community channel
-*CommunityChannelManagementApi* | [**listCommunityChannelHistoryMessages**](docs/CommunityChannelManagementApi.md#listcommunitychannelhistorymessages) | **POST** /v4/community-channel/history-message/list | List community-channel history messages
 *CommunityChannelManagementApi* | [**listCommunityChannelSubchannelUserGroups**](docs/CommunityChannelManagementApi.md#listcommunitychannelsubchannelusergroups) | **POST** /v4/community-channel/channel/user-group/list | List community channel subchannel user groups
 *CommunityChannelManagementApi* | [**listCommunityChannelUserGroupSubchannels**](docs/CommunityChannelManagementApi.md#listcommunitychannelusergroupsubchannels) | **POST** /v4/community-channel/user-group/subchannel/list | List community channel user group subchannels
 *CommunityChannelManagementApi* | [**listCommunityChannelUserGroups**](docs/CommunityChannelManagementApi.md#listcommunitychannelusergroups) | **POST** /v4/community-channel/user-group/list | List community channel user groups
@@ -229,7 +228,11 @@ Class | Method | HTTP request | Description
 *MessageManagementApi* | [**deleteCommunityChannelMessageMetadata**](docs/MessageManagementApi.md#deletecommunitychannelmessagemetadata) | **POST** /v4/community-channel/message/metadata/delete | Delete community-channel message metadata keys
 *MessageManagementApi* | [**deleteMessage**](docs/MessageManagementApi.md#deletemessage) | **POST** /v4/message/delete | Delete a message (recall)
 *MessageManagementApi* | [**listChannelTypeMessageMetadata**](docs/MessageManagementApi.md#listchanneltypemessagemetadata) | **POST** /v4/channel-type/message/metadata/list | Get message metadata
+*MessageManagementApi* | [**listCommunityChannelHistoryMessages**](docs/MessageManagementApi.md#listcommunitychannelhistorymessages) | **POST** /v4/community-channel/history-message/list | List community-channel history messages
 *MessageManagementApi* | [**listCommunityChannelMessageMetadata**](docs/MessageManagementApi.md#listcommunitychannelmessagemetadata) | **POST** /v4/community-channel/message/metadata/list | List community-channel message metadata
+*MessageManagementApi* | [**listDirectChannelHistoryMessages**](docs/MessageManagementApi.md#listdirectchannelhistorymessages) | **POST** /v4/direct-channel/history-message/list | List direct-channel history messages
+*MessageManagementApi* | [**listGroupChannelHistoryMessages**](docs/MessageManagementApi.md#listgroupchannelhistorymessages) | **POST** /v4/group-channel/history-message/list | List group-channel history messages
+*MessageManagementApi* | [**listOpenChannelHistoryMessages**](docs/MessageManagementApi.md#listopenchannelhistorymessages) | **POST** /v4/open-channel/history-message/list | List open-channel history messages
 *MessageManagementApi* | [**sendCommunityChannelMessage**](docs/MessageManagementApi.md#sendcommunitychannelmessage) | **POST** /v4/community-channel/message/send | Send a community channel message
 *MessageManagementApi* | [**sendDirectChannelMessage**](docs/MessageManagementApi.md#senddirectchannelmessage) | **POST** /v4/direct-channel/message/send | Send a direct message
 *MessageManagementApi* | [**sendDirectChannelStreamMessage**](docs/MessageManagementApi.md#senddirectchannelstreammessage) | **POST** /v4/direct-channel/message/stream/send | Send a direct channel stream message
@@ -409,9 +412,13 @@ Class | Method | HTTP request | Description
 - [CommunityUserSubchannelListRequest](docs/CommunityUserSubchannelListRequest.md)
 - [CommunityUserSubchannelListResponse](docs/CommunityUserSubchannelListResponse.md)
 - [CommunityUserSubchannelListResponseResult](docs/CommunityUserSubchannelListResponseResult.md)
+- [DirectChannelHistoryMessageListRequest](docs/DirectChannelHistoryMessageListRequest.md)
 - [DirectChannelMessageSendRequest](docs/DirectChannelMessageSendRequest.md)
 - [DirectChannelMessageUpdateRequest](docs/DirectChannelMessageUpdateRequest.md)
 - [DirectChannelStreamMessageSendRequest](docs/DirectChannelStreamMessageSendRequest.md)
+- [DirectGroupHistoryMessageRecord](docs/DirectGroupHistoryMessageRecord.md)
+- [DirectGroupHistoryMessageResponse](docs/DirectGroupHistoryMessageResponse.md)
+- [DirectGroupHistoryMessageResult](docs/DirectGroupHistoryMessageResult.md)
 - [FriendAddRequest](docs/FriendAddRequest.md)
 - [FriendCleanRequest](docs/FriendCleanRequest.md)
 - [FriendDeleteRequest](docs/FriendDeleteRequest.md)
@@ -446,6 +453,7 @@ Class | Method | HTTP request | Description
 - [GroupChannelFreezeListGetResponseResult](docs/GroupChannelFreezeListGetResponseResult.md)
 - [GroupChannelFreezeListUpdateRequest](docs/GroupChannelFreezeListUpdateRequest.md)
 - [GroupChannelFreezeStatusItem](docs/GroupChannelFreezeStatusItem.md)
+- [GroupChannelHistoryMessageListRequest](docs/GroupChannelHistoryMessageListRequest.md)
 - [GroupChannelJoinRequest](docs/GroupChannelJoinRequest.md)
 - [GroupChannelJoinResponse](docs/GroupChannelJoinResponse.md)
 - [GroupChannelJoinedItem](docs/GroupChannelJoinedItem.md)
@@ -513,6 +521,10 @@ Class | Method | HTTP request | Description
 - [OpenChannelGetResponseResult](docs/OpenChannelGetResponseResult.md)
 - [OpenChannelGlobalMuteListAddRequest](docs/OpenChannelGlobalMuteListAddRequest.md)
 - [OpenChannelGlobalMuteListRemoveRequest](docs/OpenChannelGlobalMuteListRemoveRequest.md)
+- [OpenChannelHistoryMessageListRequest](docs/OpenChannelHistoryMessageListRequest.md)
+- [OpenChannelHistoryMessageRecord](docs/OpenChannelHistoryMessageRecord.md)
+- [OpenChannelHistoryMessageResponse](docs/OpenChannelHistoryMessageResponse.md)
+- [OpenChannelHistoryMessageResult](docs/OpenChannelHistoryMessageResult.md)
 - [OpenChannelLowPriorityMessageTypeListRequest](docs/OpenChannelLowPriorityMessageTypeListRequest.md)
 - [OpenChannelMessageSendRequest](docs/OpenChannelMessageSendRequest.md)
 - [OpenChannelMessageTypeListResponse](docs/OpenChannelMessageTypeListResponse.md)
@@ -632,7 +644,7 @@ Authentication schemes defined for the API:
 ## Package Info
 
 - Repository: `https://github.com/NexconnAI-Dev/nexconn-server-sdk-node`
-- Package version: `0.1.1`
+- Package version: `0.1.2`
 
 ## License
 
