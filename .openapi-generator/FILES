@@ -106,9 +106,13 @@ docs/CommunitySubchannelTypeUpdateRequest.md
 docs/CommunityUserSubchannelListRequest.md
 docs/CommunityUserSubchannelListResponse.md
 docs/CommunityUserSubchannelListResponseResult.md
+docs/DirectChannelHistoryMessageListRequest.md
 docs/DirectChannelMessageSendRequest.md
 docs/DirectChannelMessageUpdateRequest.md
 docs/DirectChannelStreamMessageSendRequest.md
+docs/DirectGroupHistoryMessageRecord.md
+docs/DirectGroupHistoryMessageResponse.md
+docs/DirectGroupHistoryMessageResult.md
 docs/FriendAddRequest.md
 docs/FriendCleanRequest.md
 docs/FriendDeleteRequest.md
@@ -144,6 +148,7 @@ docs/GroupChannelFreezeListGetResponse.md
 docs/GroupChannelFreezeListGetResponseResult.md
 docs/GroupChannelFreezeListUpdateRequest.md
 docs/GroupChannelFreezeStatusItem.md
+docs/GroupChannelHistoryMessageListRequest.md
 docs/GroupChannelJoinRequest.md
 docs/GroupChannelJoinResponse.md
 docs/GroupChannelJoinedItem.md
@@ -215,6 +220,10 @@ docs/OpenChannelGetResponse.md
 docs/OpenChannelGetResponseResult.md
 docs/OpenChannelGlobalMuteListAddRequest.md
 docs/OpenChannelGlobalMuteListRemoveRequest.md
+docs/OpenChannelHistoryMessageListRequest.md
+docs/OpenChannelHistoryMessageRecord.md
+docs/OpenChannelHistoryMessageResponse.md
+docs/OpenChannelHistoryMessageResult.md
 docs/OpenChannelLowPriorityMessageTypeListRequest.md
 docs/OpenChannelManagementApi.md
 docs/OpenChannelMessagePriorityApi.md

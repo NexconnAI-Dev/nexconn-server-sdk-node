@@ -10,7 +10,11 @@ All requests use the primary/backup domains configured by the caller.
 |[**deleteCommunityChannelMessageMetadata**](#deletecommunitychannelmessagemetadata) | **POST** /v4/community-channel/message/metadata/delete | Delete community-channel message metadata keys|
 |[**deleteMessage**](#deletemessage) | **POST** /v4/message/delete | Delete a message (recall)|
 |[**listChannelTypeMessageMetadata**](#listchanneltypemessagemetadata) | **POST** /v4/channel-type/message/metadata/list | Get message metadata|
+|[**listCommunityChannelHistoryMessages**](#listcommunitychannelhistorymessages) | **POST** /v4/community-channel/history-message/list | List community-channel history messages|
 |[**listCommunityChannelMessageMetadata**](#listcommunitychannelmessagemetadata) | **POST** /v4/community-channel/message/metadata/list | List community-channel message metadata|
+|[**listDirectChannelHistoryMessages**](#listdirectchannelhistorymessages) | **POST** /v4/direct-channel/history-message/list | List direct-channel history messages|
+|[**listGroupChannelHistoryMessages**](#listgroupchannelhistorymessages) | **POST** /v4/group-channel/history-message/list | List group-channel history messages|
+|[**listOpenChannelHistoryMessages**](#listopenchannelhistorymessages) | **POST** /v4/open-channel/history-message/list | List open-channel history messages|
 |[**sendCommunityChannelMessage**](#sendcommunitychannelmessage) | **POST** /v4/community-channel/message/send | Send a community channel message|
 |[**sendDirectChannelMessage**](#senddirectchannelmessage) | **POST** /v4/direct-channel/message/send | Send a direct message|
 |[**sendDirectChannelStreamMessage**](#senddirectchannelstreammessage) | **POST** /v4/direct-channel/message/stream/send | Send a direct channel stream message|
@@ -388,6 +392,67 @@ const { status, data } = await apiInstance.listChannelTypeMessageMetadata(
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **listCommunityChannelHistoryMessages**
+> MessageHistoryResponse listCommunityChannelHistoryMessages(communityChannelHistoryMessageListRequest)
+
+Rate limit: 10/sec. Query range is at most 14 days; messages are returned in descending timestamp order.
+
+### Example
+
+```typescript
+import {
+    MessageManagementApi,
+    Configuration,
+    CommunityChannelHistoryMessageListRequest
+} from '@nexconn/server-sdk';
+
+const configuration = new Configuration();
+configuration.setRongCloudCredentials(
+    process.env.RONGCLOUD_APP_KEY!,
+    process.env.RONGCLOUD_APP_SECRET!,
+);
+configuration.setPrimaryBackupDomains(
+    process.env.RONGCLOUD_PRIMARY_API_DOMAIN!,
+    process.env.RONGCLOUD_SECONDARY_API_DOMAIN!,
+);
+const apiInstance = new MessageManagementApi(configuration);
+
+let communityChannelHistoryMessageListRequest: CommunityChannelHistoryMessageListRequest; //
+
+const { status, data } = await apiInstance.listCommunityChannelHistoryMessages(
+    communityChannelHistoryMessageListRequest
+);
+
+```
+
+### Parameters
+
+|Name | Type | Description  | Notes|
+|------------- | ------------- | ------------- | -------------|
+| **communityChannelHistoryMessageListRequest** | **CommunityChannelHistoryMessageListRequest**|  | |
+
+
+### Return type
+
+**MessageHistoryResponse**
+
+### Authorization
+
+[NexconnSignature](../README.md#NexconnSignature)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+|**200** | OK |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **listCommunityChannelMessageMetadata**
 > CommunityChannelMessageMetadataListResponse listCommunityChannelMessageMetadata(communityChannelMessageMetadataListRequest)
 
@@ -430,6 +495,189 @@ const { status, data } = await apiInstance.listCommunityChannelMessageMetadata(
 ### Return type
 
 **CommunityChannelMessageMetadataListResponse**
+
+### Authorization
+
+[NexconnSignature](../README.md#NexconnSignature)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+|**200** | OK |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **listDirectChannelHistoryMessages**
+> DirectGroupHistoryMessageResponse listDirectChannelHistoryMessages(directChannelHistoryMessageListRequest)
+
+Rate limit: 10/sec. Query range is at most 14 days; messages are returned in descending timestamp order.
+
+### Example
+
+```typescript
+import {
+    MessageManagementApi,
+    Configuration,
+    DirectChannelHistoryMessageListRequest
+} from '@nexconn/server-sdk';
+
+const configuration = new Configuration();
+configuration.setRongCloudCredentials(
+    process.env.RONGCLOUD_APP_KEY!,
+    process.env.RONGCLOUD_APP_SECRET!,
+);
+configuration.setPrimaryBackupDomains(
+    process.env.RONGCLOUD_PRIMARY_API_DOMAIN!,
+    process.env.RONGCLOUD_SECONDARY_API_DOMAIN!,
+);
+const apiInstance = new MessageManagementApi(configuration);
+
+let directChannelHistoryMessageListRequest: DirectChannelHistoryMessageListRequest; //
+
+const { status, data } = await apiInstance.listDirectChannelHistoryMessages(
+    directChannelHistoryMessageListRequest
+);
+
+```
+
+### Parameters
+
+|Name | Type | Description  | Notes|
+|------------- | ------------- | ------------- | -------------|
+| **directChannelHistoryMessageListRequest** | **DirectChannelHistoryMessageListRequest**|  | |
+
+
+### Return type
+
+**DirectGroupHistoryMessageResponse**
+
+### Authorization
+
+[NexconnSignature](../README.md#NexconnSignature)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+|**200** | OK |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **listGroupChannelHistoryMessages**
+> DirectGroupHistoryMessageResponse listGroupChannelHistoryMessages(groupChannelHistoryMessageListRequest)
+
+Rate limit: 10/sec. Query range is at most 14 days; messages are returned in descending timestamp order.
+
+### Example
+
+```typescript
+import {
+    MessageManagementApi,
+    Configuration,
+    GroupChannelHistoryMessageListRequest
+} from '@nexconn/server-sdk';
+
+const configuration = new Configuration();
+configuration.setRongCloudCredentials(
+    process.env.RONGCLOUD_APP_KEY!,
+    process.env.RONGCLOUD_APP_SECRET!,
+);
+configuration.setPrimaryBackupDomains(
+    process.env.RONGCLOUD_PRIMARY_API_DOMAIN!,
+    process.env.RONGCLOUD_SECONDARY_API_DOMAIN!,
+);
+const apiInstance = new MessageManagementApi(configuration);
+
+let groupChannelHistoryMessageListRequest: GroupChannelHistoryMessageListRequest; //
+
+const { status, data } = await apiInstance.listGroupChannelHistoryMessages(
+    groupChannelHistoryMessageListRequest
+);
+
+```
+
+### Parameters
+
+|Name | Type | Description  | Notes|
+|------------- | ------------- | ------------- | -------------|
+| **groupChannelHistoryMessageListRequest** | **GroupChannelHistoryMessageListRequest**|  | |
+
+
+### Return type
+
+**DirectGroupHistoryMessageResponse**
+
+### Authorization
+
+[NexconnSignature](../README.md#NexconnSignature)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+|**200** | OK |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **listOpenChannelHistoryMessages**
+> OpenChannelHistoryMessageResponse listOpenChannelHistoryMessages(openChannelHistoryMessageListRequest)
+
+Rate limit: 10/sec. Query range is at most 14 days; messages are returned in descending timestamp order.
+
+### Example
+
+```typescript
+import {
+    MessageManagementApi,
+    Configuration,
+    OpenChannelHistoryMessageListRequest
+} from '@nexconn/server-sdk';
+
+const configuration = new Configuration();
+configuration.setRongCloudCredentials(
+    process.env.RONGCLOUD_APP_KEY!,
+    process.env.RONGCLOUD_APP_SECRET!,
+);
+configuration.setPrimaryBackupDomains(
+    process.env.RONGCLOUD_PRIMARY_API_DOMAIN!,
+    process.env.RONGCLOUD_SECONDARY_API_DOMAIN!,
+);
+const apiInstance = new MessageManagementApi(configuration);
+
+let openChannelHistoryMessageListRequest: OpenChannelHistoryMessageListRequest; //
+
+const { status, data } = await apiInstance.listOpenChannelHistoryMessages(
+    openChannelHistoryMessageListRequest
+);
+
+```
+
+### Parameters
+
+|Name | Type | Description  | Notes|
+|------------- | ------------- | ------------- | -------------|
+| **openChannelHistoryMessageListRequest** | **OpenChannelHistoryMessageListRequest**|  | |
+
+
+### Return type
+
+**OpenChannelHistoryMessageResponse**
 
 ### Authorization
 

@@ -14,7 +14,6 @@ All requests use the primary/backup domains configured by the caller.
 |[**deleteCommunitySubchannel**](#deletecommunitysubchannel) | **POST** /v4/community-channel/subchannel/delete | Delete community subchannel|
 |[**dismissCommunityChannel**](#dismisscommunitychannel) | **POST** /v4/community-channel/dismiss | Dismiss community channel|
 |[**joinCommunityChannel**](#joincommunitychannel) | **POST** /v4/community-channel/join | Join community channel|
-|[**listCommunityChannelHistoryMessages**](#listcommunitychannelhistorymessages) | **POST** /v4/community-channel/history-message/list | List community-channel history messages|
 |[**listCommunityChannelSubchannelUserGroups**](#listcommunitychannelsubchannelusergroups) | **POST** /v4/community-channel/channel/user-group/list | List community channel subchannel user groups|
 |[**listCommunityChannelUserGroupSubchannels**](#listcommunitychannelusergroupsubchannels) | **POST** /v4/community-channel/user-group/subchannel/list | List community channel user group subchannels|
 |[**listCommunityChannelUserGroups**](#listcommunitychannelusergroups) | **POST** /v4/community-channel/user-group/list | List community channel user groups|
@@ -612,66 +611,6 @@ const { status, data } = await apiInstance.joinCommunityChannel(
 ### Return type
 
 **CodeOnlyResponse**
-
-### Authorization
-
-[NexconnSignature](../README.md#NexconnSignature)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-|**200** | OK |  -  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **listCommunityChannelHistoryMessages**
-> MessageHistoryResponse listCommunityChannelHistoryMessages(communityChannelHistoryMessageListRequest)
-
-
-### Example
-
-```typescript
-import {
-    CommunityChannelManagementApi,
-    Configuration,
-    CommunityChannelHistoryMessageListRequest
-} from '@nexconn/server-sdk';
-
-const configuration = new Configuration();
-configuration.setRongCloudCredentials(
-    process.env.RONGCLOUD_APP_KEY!,
-    process.env.RONGCLOUD_APP_SECRET!,
-);
-configuration.setPrimaryBackupDomains(
-    process.env.RONGCLOUD_PRIMARY_API_DOMAIN!,
-    process.env.RONGCLOUD_SECONDARY_API_DOMAIN!,
-);
-const apiInstance = new CommunityChannelManagementApi(configuration);
-
-let communityChannelHistoryMessageListRequest: CommunityChannelHistoryMessageListRequest; //
-
-const { status, data } = await apiInstance.listCommunityChannelHistoryMessages(
-    communityChannelHistoryMessageListRequest
-);
-
-```
-
-### Parameters
-
-|Name | Type | Description  | Notes|
-|------------- | ------------- | ------------- | -------------|
-| **communityChannelHistoryMessageListRequest** | **CommunityChannelHistoryMessageListRequest**|  | |
-
-
-### Return type
-
-**MessageHistoryResponse**
 
 ### Authorization
 
